@@ -97,7 +97,7 @@ preguntas = [
         'tipo': 'texto',
         'pregunta': '22C, 42F, 62I, ... ¿Cuál sigue en la sucesión?',
         'opciones': ['82L', '82O', '82N', '82M'],
-        'respuesta_correcta': ''
+        'respuesta_correcta': '82L'
     },
     {
         'grado': 9,
@@ -106,9 +106,41 @@ preguntas = [
         'opciones': ['715148', '519581', '518191', '719181'],
         'respuesta_correcta': '518191'
     },
-
-
-
+    {
+        'grado': 9,
+        'tipo': 'texto',
+        'pregunta': 'em una clase un profesor pregunta a sus alumnos si le entendieron una explicación, a lo cual uno de ellos contesta: Todos no entendimos, por lo tanto el profesor puede deducir que',
+        'opciones': ['Todos entendieron', 'Ninguno entendio', 'Algunos entendieron', 'No todos entendieron'],
+        'respuesta_correcta': 'Algunos entendieron'
+    },
+    {
+        'grado': 9,
+        'tipo': 'texto',
+        'pregunta': 'Un atleta sale a entrenar a las 9:00 a.m a una velocidad de 10 km/h. Media hora después sale en su persecusión otro atleta a una velocidad de 10 km/h. La hora en la cual el segundo atleta alcanza al primero es ',
+        'opciones': ['12:00 m', '11:30 m', '11:00 m', '10:30 m'],
+        'respuesta_correcta': '12:00 m'
+    },
+    {
+        'grado': 9,
+        'tipo': 'texto',
+        'pregunta': 'en una fabrica se empacan botellas en cajas de dos tipos, en las que un tipo caben exactamente 5 botellas y en las del otro tipo caben exactamente 9 botellas. El mínimo número de cajas que se deben usar para empacar totalmente 100 botellas es:',
+        'opciones': ['10', '11', '12', '15'],
+        'respuesta_correcta': '12'
+    },
+    {
+        'grado': 9,
+        'tipo': 'texto',
+        'pregunta': 'Héctor ha gastado el 40% de sus ahorros y le han dado a su hermana el 30% de lo que aún tenia. El porcentaje que conserva Héctor de sus ahorros es:',
+        'opciones': ['25%', '30%', '42%', '38%'],
+        'respuesta_correcta': '42%'
+    },
+    {
+        'grado': 9,
+        'tipo': 'texto',
+        'pregunta': 'en el siguiente conjunto de datos: 18, 18, 19, 17, 23, 20, 21, 18. La mediana es:',
+        'opciones': ['17.5', '18', '18.5', '23'],
+        'respuesta_correcta': '18.5'
+    },
 
 #holaaaaaaaaaaa
 
