@@ -142,12 +142,6 @@ preguntas = [
         'respuesta_correcta': '18.5'
     },
 
-#holaaaaaaaaaaa
-
-
-
-
-
 
 
 
