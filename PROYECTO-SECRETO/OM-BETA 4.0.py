@@ -448,7 +448,7 @@ def abrir_ventana_juego(grado):
                 boton = tk.Button(opciones_frame, text="", image=imagen_opcion, compound="center", width=imagen_width, height=imagen_height, command=lambda i=i: verificar_respuesta(pregunta_actual['opciones'][i]))
                 boton.image = imagen_opcion
             else:
-                boton = tk.Button(opciones_frame, text=opcion, font=('Arial', 12), width=20, height=2, command=lambda i=i: verificar_respuesta(pregunta_actual['opciones'][i]))
+                boton = tk.Button(opciones_frame, text=opcion, font=('Arial', 12), width=30, height=2, command=lambda i=i: verificar_respuesta(pregunta_actual['opciones'][i]))
             boton.grid(row=i // 2, column=i % 2, pady=5, padx=10)
             botones_opciones.append(boton)
             boton.config(bg='salmon', fg='black', highlightbackground='blue', borderwidth=7, font=('Arial', 12))
