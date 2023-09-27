@@ -6,7 +6,7 @@ import pygame
 def sonido():
     pygame.mixer.init()
 
-    fondo_musical = pygame.mixer.Sound("RECURSOS/fondo.mp3")
+    fondo_musical = pygame.mixer.Sound("PROYECTO-SECRETO/RECURSOS/fondo.mp3")
 
     canal_fondo = pygame.mixer.Channel(0)
 
@@ -21,7 +21,7 @@ def detener_audio():
 
 def reproducir_bien():
     pygame.mixer.init()
-    pygame.mixer.music.load("RECURSOS/bien.mp3")
+    pygame.mixer.music.load("PROYECTO-SECRETO/RECURSOS/bien.mp3")
     pygame.mixer.music.play(-1)
 
 def detener_audio_bien():
@@ -29,7 +29,7 @@ def detener_audio_bien():
 
 def reproducir_mal():
     pygame.mixer.init()
-    pygame.mixer.music.load("RECURSOS/mal.mp3")
+    pygame.mixer.music.load("PROYECTO-SECRETO/RECURSOS/mal.mp3")
     pygame.mixer.music.play(-1)
 
 def detener_audio_mal():
@@ -302,14 +302,14 @@ preguntas = [
     'grado': 9,
     'tipo': 'mixta', 
     'pregunta': 'Texto de la pregunta',
-    'opciones': ['RECURSOS/opcion1.png', 'RECURSOS/opcion2.png', 'RECURSOS/opcion3.png', 'RECURSOS/opcion4.png'],
-    'respuesta_correcta': 'RECURSOS/opcion2.png'
+    'opciones': ['PROYECTO-SECRETO/RECURSOS/opcion1.png', 'PROYECTO-SECRETO/RECURSOS/opcion2.png', 'PROYECTO-SECRETO/RECURSOS/opcion3.png', 'PROYECTO-SECRETO/RECURSOS/opcion4.png'],
+    'respuesta_correcta': 'PROYECTO-SECRETO/RECURSOS/opcion2.png'
     },
     {
         'grado': 9,
         'tipo': 'imagen',
         'pregunta': '¿2Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.?',
-        'imagen': 'RECURSOS/pregunta1.png',
+        'imagen': 'PROYECTO-SECRETO/RECURSOS/pregunta1.png',
         'texto_debajo_imagen': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         'opciones': ['3', '1', '2', '4'],
         'respuesta_correcta': '2'
@@ -318,7 +318,7 @@ preguntas = [
         'grado': 9,
         'tipo': 'imagen',
         'pregunta': '¿4Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.?',
-        'imagen': 'RECURSOS/pregunta2.png',
+        'imagen': 'PROYECTO-SECRETO/RECURSOS/pregunta2.png',
         'texto_debajo_imagen': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         'opciones': ['3', '1', '2', '4'],
         'respuesta_correcta': '2'
@@ -327,7 +327,7 @@ preguntas = [
         'grado': 10,
         'tipo': 'imagen',
         'pregunta': '¿1Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.?',
-        'imagen': 'RECURSOS/pregunta1.png',
+        'imagen': 'PROYECTO-SECRETO/RECURSOS/pregunta1.png',
         'texto_debajo_imagen': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         'opciones': ['1', '2', '3', '4'],
         'respuesta_correcta': '2'
@@ -343,7 +343,7 @@ preguntas = [
         'grado': 10,
         'tipo': 'imagen',
         'pregunta': '¿3Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.?',
-        'imagen': 'RECURSOS/pregunta2.png',
+        'imagen': 'PROYECTO-SECRETO/RECURSOS/pregunta2.png',
         'texto_debajo_imagen': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         'opciones': ['3', '1', '2', '4'],
         'respuesta_correcta': '2'
@@ -373,7 +373,7 @@ preguntas = [
         'grado': 11,
         'tipo': 'imagen',
         'pregunta': '¿3Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.?',
-        'imagen': 'RECURSOS/pregunta2.png',
+        'imagen': 'PROYECTO-SECRETO/RECURSOS/pregunta2.png',
         'texto_debajo_imagen': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat',
         'opciones': ['3', '1', '2', '4'],
         'respuesta_correcta': '2'
@@ -382,7 +382,7 @@ preguntas = [
         'grado': 11,
         'tipo': 'imagen',
         'pregunta': '¿4Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.?',
-        'imagen': 'RECURSOS/pregunta1.png',
+        'imagen': 'PROYECTO-SECRETO/RECURSOS/pregunta1.png',
         'texto_debajo_imagen': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat',
         'opciones': ['3', '1', '2', '4'],
         'respuesta_correcta': '2'
@@ -546,7 +546,7 @@ def abrir_ventana_juego(grado):
     ventana_juego.title(grado)
     ventana_juego.attributes('-fullscreen', True)
 
-    imagen_fondo_juego = Image.open('RECURSOS/fondo_juego.png')
+    imagen_fondo_juego = Image.open('PROYECTO-SECRETO/RECURSOS/fondo_juego.png')
     imagen_fondo_juego = ImageTk.PhotoImage(imagen_fondo_juego)
 
     fondo_label_juego = tk.Label(ventana_juego, image=imagen_fondo_juego)
@@ -587,9 +587,9 @@ def abrir_ventana_juego(grado):
     terminar_boton = tk.Button(ventana_juego, text='TERMINAR JUEGO', font=('Arial', 12),  bg='red', width=40, command=terminar_juego)
     terminar_boton.pack(pady=10)
 
-    imagen_respuesta_correcta = Image.open('RECURSOS/bien.png')
+    imagen_respuesta_correcta = Image.open('PROYECTO-SECRETO/RECURSOS/bien.png')
     imagen_respuesta_correcta = ImageTk.PhotoImage(imagen_respuesta_correcta)
-    imagen_respuesta_incorrecta = Image.open('RECURSOS/mal.png')
+    imagen_respuesta_incorrecta = Image.open('PROYECTO-SECRETO/RECURSOS/mal.png')
     imagen_respuesta_incorrecta = ImageTk.PhotoImage(imagen_respuesta_incorrecta)
 
     mostrar_pregunta()
@@ -603,10 +603,10 @@ ventana_inicio = tk.Tk()
 ventana_inicio.title('Olimpiadas de matemáticas')
 ventana_inicio.attributes('-fullscreen', True)
 
-icono = tk.PhotoImage(file="RECURSOS/icono.png")
+icono = tk.PhotoImage(file="PROYECTO-SECRETO/RECURSOS/icono.png")
 ventana_inicio.iconphoto(True, icono)
 
-imagen_fondo_inicio = Image.open('RECURSOS/fondo_inicio.png')
+imagen_fondo_inicio = Image.open('PROYECTO-SECRETO/RECURSOS/fondo_inicio.png')
 imagen_fondo_inicio = ImageTk.PhotoImage(imagen_fondo_inicio)
 fondo_label_inicio = tk.Label(ventana_inicio, image=imagen_fondo_inicio)
 fondo_label_inicio.place(x=0, y=0, relwidth=1, relheight=1)
