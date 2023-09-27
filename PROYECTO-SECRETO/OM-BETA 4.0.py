@@ -44,16 +44,16 @@ preguntas = [
         'respuesta_correcta': 'BCDA'
     },
     {
-        'grado': 9,
+        'grado': 10,
         'tipo': 'texto',
-        'pregunta': 'En un grupo la suma del número de mujeres con el de varones es 40 y su diferencia es 10 por lo tanto el grupo tiene: ',
+        'pregunta': 'En un grupo la suma del número de mujeres con el de varones es 40 y su diferencia es 10 por lo tanto el grupo tiene:',
         'opciones': ['20 y 20', '25 y 15', '28 y 12', '30 y 10'],
         'respuesta_correcta': '25 y 15'
     },
     {
-        'grado': 9,
+        'grado': 11,
         'tipo': 'texto',
-        'pregunta': 'El área de la puerta de un edificio mide 4,32 m^2 y su altura es de 2,40 m ¿Cuanto mide su ancho?',
+        'pregunta': 'El área de la puerta de un edificio mide 4,32 m^2 y su altura es de 2,40 m ¿Cuánto mide su ancho?',
         'opciones': ['1,80 m', '2,00 m', '1,50 m', '1,90 m'],
         'respuesta_correcta': '1,80 m'
     },
@@ -65,14 +65,14 @@ preguntas = [
         'respuesta_correcta': '20%'
     },
     {
-        'grado': 9,
+        'grado': 10,
         'tipo': 'texto',
         'pregunta': 'Un ladrillo más medio ladrillo vale 90 pesos ¿Cuánto  costarán 10 ladrillos',
         'opciones': ['900 pesos', '300 pesos', '600 pesos', '450 pesos'],
         'respuesta_correcta': '600 pesos'
     },
     {
-        'grado': 9,
+        'grado': 11,
         'tipo': 'texto',
         'pregunta': '2 personas, pintan una casa en 36 horas, si esta labor la realizan 6 personas ¿En  cuánto tiempo la pintarian?',
         'opciones': ['24 horas', '48 horas', '72 horas', '12 horas'],
@@ -86,14 +86,14 @@ preguntas = [
         'respuesta_correcta': '4/15'
     },
     {
-        'grado': 9,
+        'grado': 10,
         'tipo': 'texto',
         'pregunta': '1, 8, 27, 36, 125, 216 ¿Cuál de estos números no pertenece a la sucesión?',
         'opciones': ['216', '36', '125', '8'],
         'respuesta_correcta': '36'
     },
     {
-        'grado': 9,
+        'grado': 11,
         'tipo': 'texto',
         'pregunta': '22C, 42F, 62I, ... ¿Cuál sigue en la sucesión?',
         'opciones': ['82L', '82O', '82N', '82M'],
@@ -102,19 +102,19 @@ preguntas = [
     {
         'grado': 9,
         'tipo': 'texto',
-        'pregunta': 'AMERICA = 1734651, INDIA = 68961, CANADA = ?, ¿Como se escribiria Canadá de acuerdo con las representaciones?',
+        'pregunta': 'AMERICA = 1734651, INDIA = 68961, CANADA = ?, ¿Cómo se escribiria Canadá de acuerdo con las representaciones?',
         'opciones': ['715148', '519581', '518191', '719181'],
         'respuesta_correcta': '518191'
     },
     {
-        'grado': 9,
+        'grado': 10,
         'tipo': 'texto',
-        'pregunta': 'em una clase un profesor pregunta a sus alumnos si le entendieron una explicación, a lo cual uno de ellos contesta: Todos no entendimos, por lo tanto el profesor puede deducir que',
+        'pregunta': 'En una clase un profesor pregunta a sus alumnos si le entendieron una explicación, a lo cual uno de ellos contesta: Todos no entendimos, por lo tanto el profesor puede deducir que:',
         'opciones': ['Todos entendieron', 'Ninguno entendio', 'Algunos entendieron', 'No todos entendieron'],
         'respuesta_correcta': 'Algunos entendieron'
     },
     {
-        'grado': 9,
+        'grado': 11,
         'tipo': 'texto',
         'pregunta': 'Un atleta sale a entrenar a las 9:00 a.m a una velocidad de 10 km/h. Media hora después sale en su persecusión otro atleta a una velocidad de 10 km/h. La hora en la cual el segundo atleta alcanza al primero es ',
         'opciones': ['12:00 m', '11:30 m', '11:00 m', '10:30 m'],
@@ -123,28 +123,179 @@ preguntas = [
     {
         'grado': 9,
         'tipo': 'texto',
-        'pregunta': 'en una fabrica se empacan botellas en cajas de dos tipos, en las que un tipo caben exactamente 5 botellas y en las del otro tipo caben exactamente 9 botellas. El mínimo número de cajas que se deben usar para empacar totalmente 100 botellas es:',
+        'pregunta': 'En una fabrica se empacan botellas en cajas de dos tipos, en las que un tipo caben exactamente 5 botellas y en las del otro tipo caben exactamente 9 botellas. El mínimo número de cajas que se deben usar para empacar totalmente 100 botellas es:',
         'opciones': ['10', '11', '12', '15'],
         'respuesta_correcta': '12'
     },
     {
-        'grado': 9,
+        
+        'grado': 10,
         'tipo': 'texto',
         'pregunta': 'Héctor ha gastado el 40% de sus ahorros y le han dado a su hermana el 30% de lo que aún tenia. El porcentaje que conserva Héctor de sus ahorros es:',
         'opciones': ['25%', '30%', '42%', '38%'],
         'respuesta_correcta': '42%'
     },
     {
-        'grado': 9,
+        'grado': 11,
         'tipo': 'texto',
-        'pregunta': 'en el siguiente conjunto de datos: 18, 18, 19, 17, 23, 20, 21, 18. La mediana es:',
+        'pregunta': 'En el siguiente conjunto de datos: 18, 18, 19, 17, 23, 20, 21, 18. La mediana es:',
         'opciones': ['17.5', '18', '18.5', '23'],
         'respuesta_correcta': '18.5'
     },
-
-
-
-
+    {
+        'grado': 9,
+        'tipo': 'texto',
+        'pregunta': 'en un estanque hay 100 pares de peces, nacen dos pares de peces por cada pez en el estanque, 350 de los peces que nacen se llevan a un  río. ¿Cuántos peces quedarían en el estanque?',
+        'opciones': ['550', '450', '650', '250'],
+        'respuesta_correcta': '650'
+    },
+    {
+        'grado': 10,
+        'tipo': 'texto',
+        'pregunta': 'En una textilera se tiene un corte de dril de 64 metros: si cada día se venden cuatro metros, entonces el teimpo que tardarán en cortar toda la pieza es:',
+        'opciones': ['14 días', '15 días', '16 días', '17 días'],
+        'respuesta_correcta': '15 días'
+    },
+    {
+        'grado': 11,
+        'tipo': 'texto',
+        'pregunta': 'Una máquina tiene 5 bolas rojas, 4 bolas blancas y 5 bolas amarilas. ¿Cuántas monedas de $100 se deben echar en la máquina para que al menos se hayan sacado 2 bolas de igual color, sabiendo que para sacar dos bolas se necesita 1 moneda?',
+        'opciones': ['2', '4', '3', '7'],
+        'respuesta_correcta': '2'
+    },
+    {
+        'grado': 9,
+        'tipo': 'texto',
+        'pregunta': 'Si el peso de una persona es 60 kilogramos más la mitad de su propio peso, entonces la ecuación que relaciona los x kilogramos que pasa la persona es',
+        'opciones': ['X/2=30', 'X/2=60', 'X=(30+X)/2', 'X=(60+X)/2'],
+        'respuesta_correcta': 'X/2=60'
+    },
+    {
+        'grado': 10,
+        'tipo': 'texto',
+        'pregunta': '"Todos los celulares son rojos", es lo mismo que afirma:',
+        'opciones': ['Algunos celulares son rojos', 'Algunos celulares son negros', 'No todos los celulares son blancos', 'No hay celulares que no sean rojos'],
+        'respuesta_correcta': 'No hay celulares que no sean rojos'
+    },
+    {
+        'grado': 11,
+        'tipo': 'texto',
+        'pregunta': '"Existe un número primo par" es lo mismo que afirmar:',
+        'opciones': ['No todos los primos son impares', 'Algunos primos no son pares', 'Todos los primos son pares', 'Hay primos que no son pares'],
+        'respuesta_correcta': 'No todos los primos son impares'
+    },
+    {
+        'grado': 9,
+        'tipo': 'texto',
+        'pregunta': 'Un estudiante recibe su primer título sólo si pasa todos sus exámenes y presenta todos sus trabajos. de 300 estudiantes, 250 pasaron todos los exámens y 215 presentaron todos los trabajos. ¿Cuántos estudiantes recibieron su primer título?',
+        'opciones': ['Por lo menos 215', 'A lo sumo 185', 'Exactamente 215', 'Por lo menos 165'],
+        'respuesta_correcta': 'Por lo menos 165'
+    },
+    {
+        'grado': 10,
+        'tipo': 'texto',
+        'pregunta': 'Una fabrica que trabaja a un ritmo constante produce 20 automóviles en 4 días. ¿Cúantos automóviles es posible fabricar en tres fabricas similares, que trabajan al mismo ritmo, en 6 días?',
+        'opciones': ['60', '80', '90', '120'],
+        'respuesta_correcta': '90'
+    },
+    {
+        'grado': 11,
+        'tipo': 'texto',
+        'pregunta': 'cierto día Mauricio afirma: la hermana de mi tío no es mi tía. si lo afirma Mauricio es cierto, ¿A quién se estara refiriendo?',
+        'opciones': ['A su hija', 'A su madre', 'A su esposa', 'A su hermana'],
+        'respuesta_correcta': 'A su madre'
+    },
+    {
+        'grado': 9,
+        'tipo': 'texto',
+        'pregunta': 'Se sabe que un remedio casero funciona en 25 de cada 60 perosnas. ¿Qué probabilidad hay que funcione si me aplico el remdio?',
+        'opciones': ['15%', '45%', '35%', '60%'],
+        'respuesta_correcta': '25%'
+    },
+    {
+        'grado': 10,
+        'tipo': 'texto',
+        'pregunta': '¿Cuántos cortes se deben hacer como mínimo para que un pastel quede dividido en 8 partes iguales',
+        'opciones': ['2', '3', '4', '5'],
+        'respuesta_correcta': '4'
+    },
+    {
+        'grado': 11,
+        'tipo': 'texto',
+        'pregunta': 'La fabrica de leche "Luna Azul", aumentó el precio de cada litro un 5%, si el costo anterios era de $4000, ¿Cuál es el pprecio actual del litro de leche?',
+        'opciones': ['$4200', '$4500', '$4100', '$4400'],
+        'respuesta_correcta': '$4200'
+    },
+    {
+        'grado': 9,
+        'tipo': 'texto',
+        'pregunta': 'En una tienda se recibn 7 cajas de refresco 3 veces a la semana. si cada caja contiene 24 refrescos, ¿Cuántos refrescos se reciben en un mes?',
+        'opciones': ['504', '168', '2016', '2060'],
+        'respuesta_correcta': '2016'
+    },
+    {
+        'grado': 10,
+        'tipo': 'texto',
+        'pregunta': 'una bici avanza 144 mts en un minutoo, a velocidad constante. ¿Que distancia recorera en 1/6 de hora?',
+        'opciones': ['144 mts', '1440 mts', '148mts', '1480 mts'],
+        'respuesta_correcta': '1440'
+    },
+    {
+        'grado': 11,
+        'tipo': 'texto',
+        'pregunta': 'un tren de psajeros se compone de doce vagones. cada vagón tiene seis compartimientos y cada compartimiento tiene seis lugares para viajar sentado; ¿cuántos pasajeros pueden viajar sentados en el tren?',
+        'opciones': ['342', '172', '422', '432'],
+        'respuesta_correcta': '432'
+    },
+    {
+        'grado': 9,
+        'tipo': 'texto',
+        'pregunta': 'cual es el menor número de caramelos de 65 centavos de dóolar que se pueden comprar con monedas de 1 dólar sin recibir cambio',
+        'opciones': ['20', '18', '15', '10'],
+        'respuesta_correcta': '20'
+    },
+    {
+        'grado': 10,
+        'tipo': 'texto',
+        'pregunta': 'Felipe tiene tre docenas y medias de canica; al jugar pierde 18 canicas y posteriormente le regalan una docena¿Cuántas le quedaron?',
+        'opciones': ['34', '30', '36', '24'],
+        'respuesta_correcta': '36'
+    },
+    {
+        'grado': 11,
+        'tipo': 'texto',
+        'pregunta': 'Cinco amigos se encuentran en la calle y se saludan de mano ¿Cuántos apretones de mano hubo en total?',
+        'opciones': ['10', '15', '20', '25'],
+        'respuesta_correcta': '10'
+    },
+    {
+        'grado': 9,
+        'tipo': 'texto',
+        'pregunta': 'un estudiante realiza las operaciones de un problema en su calculadora y redondeo el resultado a 48,2. El redondeo lo hizo respecto a las céntimas más proximas. ¿Cuál de los siguientes números es el más aproximado al que obtuvo en la calculadora?',
+        'opciones': ['48,141', '48,269', '48,189', '48,043'],
+        'respuesta_correcta': '48,189'
+    },
+    {
+        'grado': 10,
+        'tipo': 'texto',
+        'pregunta': 'Si se desea hacer una rifa de una nevera en la que cada boleta tiene un número de tres cifras, ¿Cuántas boletas se deben imprimir?',
+        'opciones': ['100', '1000', '300', '3000'],
+        'respuesta_correcta': '1000'
+    },
+    {
+        'grado': 11,
+        'tipo': 'texto',
+        'pregunta': 'al curso de razonamiento lógico asisten 45 estudiantes donde hay 10 alumnas que tiene cabello rubio, 20 alumnas que tiene el cabello negro, 5 hombres que tiene cabello rubio y 10 hombres tiene el cabello negro La probabilidad de que un alumno sea hombre es:',
+        'opciones': ['1/3', '2/3', '3/4', '1/2'],
+        'respuesta_correcta': '1/3'
+    },
+    {
+        'grado': 9,
+        'tipo': 'texto',
+        'pregunta': 'en la siguiente secuencia: 54,49,X, 39,34... El número que se debe remplazar por X es:',
+        'opciones': ['47', '44', '45a', '42'],
+        'respuesta_correcta': '44'
+    },
 
     #----------------------------------------------------------------------
     {
@@ -272,10 +423,6 @@ def abrir_ventana_juego(grado):
         for boton in botones_opciones:
             boton.destroy()
         botones_opciones = []
-        
-        opciones = pregunta_actual['opciones']
-        random.shuffle(opciones)
-        
         if pregunta_actual['tipo'] == 'imagen':
             imagen = Image.open(pregunta_actual['imagen'])
             imagen = imagen.resize((400, 300))
