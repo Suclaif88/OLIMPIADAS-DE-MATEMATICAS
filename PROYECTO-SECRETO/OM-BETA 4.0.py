@@ -299,13 +299,25 @@ preguntas = [
 
     #----------------------------------------------------------------------
     {
-    'grado': 9,
-    'tipo': 'mixta', 
-    'pregunta': 'Texto de la pregunta',
-    'opciones': ['RECURSOS/opcion1.png', 'RECURSOS/opcion2.png', 'RECURSOS/opcion3.png', 'RECURSOS/opcion4.png'],
-    'respuesta_correcta': 'RECURSOS/opcion2.png'
+        #preguntas con respuesta imagenes
+        'grado': 9,
+        'tipo': 'mixta', 
+        'pregunta': 'Texto de la pregunta',
+        'opciones': ['RECURSOS/opcion1.png', 'RECURSOS/opcion2.png', 'RECURSOS/opcion3.png', 'RECURSOS/opcion4.png'],
+        'respuesta_correcta': 'RECURSOS/opcion2.png'
     },
     {
+        #preguntas con respuesta imagenes
+        'grado': 9,
+        'tipo': 'mixta', 
+        'pregunta': 'la negación del enunciado << ningún A es B>>, representado en un diagrama es:',
+        'opciones': ['RECURSOS/54a.jpg', 'RECURSOS/54b.jpg', 'RECURSOS/54c.jpg', 'RECURSOS/55d.jpg'],
+        'respuesta_correcta': 'RECURSOS/opcion2.png'
+    },
+
+    #------------------------------------------------------------------------
+    {
+        #pregunta imagenes
         'grado': 9,
         'tipo': 'imagen',
         'pregunta': '¿2Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.?',
@@ -314,79 +326,7 @@ preguntas = [
         'opciones': ['3', '1', '2', '4'],
         'respuesta_correcta': '2'
     },
-    {
-        'grado': 9,
-        'tipo': 'imagen',
-        'pregunta': '¿4Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.?',
-        'imagen': 'RECURSOS/pregunta2.png',
-        'texto_debajo_imagen': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        'opciones': ['3', '1', '2', '4'],
-        'respuesta_correcta': '2'
-    },
-    {
-        'grado': 10,
-        'tipo': 'imagen',
-        'pregunta': '¿1Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.?',
-        'imagen': 'RECURSOS/pregunta1.png',
-        'texto_debajo_imagen': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        'opciones': ['1', '2', '3', '4'],
-        'respuesta_correcta': '2'
-    },
-    {
-        'grado': 10,
-        'tipo': 'texto',
-        'pregunta': '¿2Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.?',
-        'opciones': ['1', '2', '3', '4'],
-        'respuesta_correcta': '2'
-    },
-    {
-        'grado': 10,
-        'tipo': 'imagen',
-        'pregunta': '¿3Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.?',
-        'imagen': 'RECURSOS/pregunta2.png',
-        'texto_debajo_imagen': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        'opciones': ['3', '1', '2', '4'],
-        'respuesta_correcta': '2'
-    },
-    {
-        'grado': 10,
-        'tipo': 'texto',
-        'pregunta': '¿2Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.?',
-        'opciones': ['1', '2', '3', '4'],
-        'respuesta_correcta': '2'
-    },
-    {
-        'grado': 11,
-        'tipo': 'texto',
-        'pregunta': '¿1Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.?',
-        'opciones': ['1', '2', '3', '4'],
-        'respuesta_correcta': '2'
-    },
-    {
-        'grado': 11,
-        'tipo': 'texto',
-        'pregunta': '¿2Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.?',
-        'opciones': ['1', '2', '3', '4'],
-        'respuesta_correcta': '2'
-    },
-    {
-        'grado': 11,
-        'tipo': 'imagen',
-        'pregunta': '¿3Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.?',
-        'imagen': 'RECURSOS/pregunta2.png',
-        'texto_debajo_imagen': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat',
-        'opciones': ['3', '1', '2', '4'],
-        'respuesta_correcta': '2'
-    },
-    {
-        'grado': 11,
-        'tipo': 'imagen',
-        'pregunta': '¿4Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.?',
-        'imagen': 'RECURSOS/pregunta1.png',
-        'texto_debajo_imagen': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat',
-        'opciones': ['3', '1', '2', '4'],
-        'respuesta_correcta': '2'
-    },
+
 ]
 
 preguntas_disponibles = []
