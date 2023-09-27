@@ -293,7 +293,7 @@ preguntas = [
         'grado': 9,
         'tipo': 'texto',
         'pregunta': 'en la siguiente secuencia: 54,49,X, 39,34... El número que se debe remplazar por X es:',
-        'opciones': ['47', '44', '45a', '42'],
+        'opciones': ['47', '44', '45', '42'],
         'respuesta_correcta': '44'
     },
 
