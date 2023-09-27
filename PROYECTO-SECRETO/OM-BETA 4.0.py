@@ -423,6 +423,10 @@ def abrir_ventana_juego(grado):
         for boton in botones_opciones:
             boton.destroy()
         botones_opciones = []
+        
+        opciones = pregunta_actual['opciones']
+        random.shuffle(opciones)
+        
         if pregunta_actual['tipo'] == 'imagen':
             imagen = Image.open(pregunta_actual['imagen'])
             imagen = imagen.resize((400, 300))
