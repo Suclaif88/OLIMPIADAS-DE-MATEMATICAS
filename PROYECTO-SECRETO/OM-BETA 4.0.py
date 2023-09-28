@@ -303,7 +303,119 @@ preguntas = [
         'opciones': ['30', '25', '20', '23'],
         'respuesta_correcta': '25'
     },
-
+    {
+        'grado': 11,
+        'tipo': 'texto',
+        'pregunta': 'Carlos y Rocio deciden verse a las 8 p.m. Carlos tiene un reloj 15 minutos adelantado y Rocio 15 minutos atrasados . Si Carlos llega a la cita 15 minutos antes según su reloj y Rocio llega 15 minutos retrasada según su reloj .¿Cuánto tiempo esperó Carlos?',
+        'opciones': ['15 min', '30 min', '45 min', '60 min'],
+        'respuesta_correcta': '60 min'
+    },
+    {
+        'grado': 9,
+        'tipo': 'texto',
+        'pregunta': 'Ely le dice a Lenin: Si el pasado mañana de ayer es jueves, ¿qué día será el anteayer, del ayer del mañana?',
+        'opciones': ['Miercoles', 'Martes', 'Lunes', 'Domingo'],
+        'respuesta_correcta': 'Lunes'
+    },
+    {
+        'grado': 9,
+        'tipo': 'texto',
+        'pregunta': 'se tiene una caja con 5 esferas blancas, 3 azules y 4 verdes. ¿Cuántas esferas, como mínimo, se tendrán que estraer al azar para tener la certeza de haber extraído una esfera blanca?',
+        'opciones': ['6', '5', '8', '9'],
+        'respuesta_correcta': '8'
+    },
+    {
+        'grado': 9,
+        'tipo': 'texto',
+        'pregunta': 'Ely le dice a Lenin: Si el pasado mañana de ayer es jueves, ¿qué día será el anteayer, del ayer del mañana?',
+        'opciones': ['Miercoles', 'Martes', 'Lunes', 'Domingo'],
+        'respuesta_correcta': 'Lunes'
+    },
+    {
+        'grado': 9,
+        'tipo': 'texto',
+        'pregunta': 'un policía sabe que, de un grupo de 20 personas reunidas en una fiesta, hay 12 que son culpables de un robo, pero no sabe cuáles son. ¿Cuántas personas deben arrestar como mínimo, para tener la seguridad de llevar a un culpable?',
+        'opciones': ['8', '9', '12', '7'],
+        'respuesta_correcta': '9'
+    },
+    {
+        'grado': 9,
+        'tipo': 'texto',
+        'pregunta': '¿Cuántos cuartos son seis mitades?',
+        'opciones': ['8 cuartos', '10 cuartos', '12 cuartos', '18 cuartos'],
+        'respuesta_correcta': '12 cuartos'
+    },
+    {
+        'grado': 9,
+        'tipo': 'texto',
+        'pregunta': ' Un hombre se come un lechón en un minuto y medio. ¿Cuántos hombres se necesitan para comer 60 lechones en media hora?',
+        'opciones': ['9', '30', '3', '6'],
+        'respuesta_correcta': '3'
+    },
+    {
+        'grado': 9,
+        'tipo': 'texto',
+        'pregunta': ' Si 5 máquinas hacen 5 artículos en 5 minutos. ¿Cuánto tiempo necesitarán 100 máquinas para hacer 100 artículos?',
+        'opciones': ['5 minutos', '20 minutos', '30 minutos', '100 minutos'],
+        'respuesta_correcta': '5 minutos'
+    },
+    {
+        'grado': 9,
+        'tipo': 'texto',
+        'pregunta': 'En una habitación se encuentran 4 gatos. Cada gato está en un rincón y ve a otros 3 felinos. ¿Cuántos gatos hay en la habitación?',
+        'opciones': ['4', '12', '16', '9'],
+        'respuesta_correcta': '4'
+    },
+    {
+        'grado': 9,
+        'tipo': 'texto',
+        'pregunta': 'Si 5 máquinas hacen 5 artículos en 5 minutos. ¿Cuánto tiempo necesitarán 100 máquinas para hacer 100 artículos?',
+        'opciones': ['5 minutos', '20 minutos', '30 minutos', '100 minutos'],
+        'respuesta_correcta': '5 minutos'
+    },
+    {
+        'grado': 9,
+        'tipo': 'texto',
+        'pregunta': 'en una caja hay 5 bolas numeradas del 1 al 5. Se extrae al azar una bola de la caja se restituye y se repite la operación doos veces más. se registra de (de izquierda a derecha) los números de las bolas que van saliendo, según el orden de salida de modo que resulte un número de tres cifras. ¿Cuántos diferentes de tres cifras pueden obtenerse de este modo',
+        'opciones': ['60', '125', '85', '100'],
+        'respuesta_correcta': '125'
+    },
+    {
+        'grado': 9,
+        'tipo': 'texto',
+        'pregunta': 'En una caja hay 6 bolas numeradas del 1 al 6. se extraen al azar, una tra otra, tres bolas, sin restituir la bola que ha sido extraída, y se registran (de izquierda a derecha) los números de las bolas que van saliendo, según el orden de salida de modo que resulte un número de tres cifras.¿Cuántos números diferentes de tres cifras pueden obtenerse de este modo?',
+        'opciones': ['216', '124', '120', '180'],
+        'respuesta_correcta': '120'
+    },
+    {
+        'grado': 9,
+        'tipo': 'texto',
+        'pregunta': 'Arrojamos un dado y luego de ello arrojamos una moneda, ¿cuál será el número de resultados posibles de este experimento',
+        'opciones': ['7', '12', '72', '8'],
+        'respuesta_correcta': '12'
+    },
+    {
+        'grado': 9,
+        'tipo': 'texto',
+        'pregunta': 'un tren recerrió 240 km a una velocidad de 80 km/h. ¿Cuántos tiempo llevó realizar el viaje?',
+        'opciones': ['3 horas', '4 horas', '2 horas y 30 minutos', '1 hora y 30 miutos'],
+        'respuesta_correcta': '3 horas'
+    },
+    {
+        'grado': 9,
+        'tipo': 'texto',
+        'pregunta': 'en una caja habíaa 20 sombreros blancos y 13 sombreros neros. jorge extrajo al azar de la caja tres  sombreros uno tra otro sin restituirlos a la caja, y los tre sombreros extraídos resultaron negros. ¿Cuál es la probabilidad de que el cuarto sombrero extraído al azar sea también negro? ',
+        'opciones': ['13/33', '10/33', '1/3', '1/33'],
+        'respuesta_correcta': '1/3'
+    },
+    {
+        'grado': 9,
+        'tipo': 'texto',
+        'pregunta': 'Dato: 2¨',
+        'opciones': ['5 minutos', '20 minutos', '30 minutos', '100 minutos'],
+        'respuesta_correcta': '5 minutos'
+    },
+    
     #----------------------------------------------------------------------
     {
         #preguntas con respuesta imagenes
