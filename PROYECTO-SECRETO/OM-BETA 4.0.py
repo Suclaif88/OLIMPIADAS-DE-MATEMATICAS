@@ -296,37 +296,133 @@ preguntas = [
         'opciones': ['47', '44', '45a', '42'],
         'respuesta_correcta': '44'
     },
+    {
+        'grado': 10,
+        'tipo': 'texto',
+        'pregunta': 'Determine el valor de "X+Y" en la sucesión: 14; 11; 13; 12; 12; 13; 11; 14; X; Y',
+        'opciones': ['30', '25', '20', '23'],
+        'respuesta_correcta': '25'
+    },
 
     #----------------------------------------------------------------------
     {
         #preguntas con respuesta imagenes
-        'grado': 9,
-        'tipo': 'mixta', 
-        'pregunta': 'Texto de la pregunta',
-        'opciones': ['RECURSOS/opcion1.png', 'RECURSOS/opcion2.png', 'RECURSOS/opcion3.png', 'RECURSOS/opcion4.png'],
-        'respuesta_correcta': 'RECURSOS/opcion2.png'
-    },
-    {
-        #preguntas con respuesta imagenes
-        'grado': 9,
+        'grado': 11,
         'tipo': 'mixta', 
         'pregunta': 'la negación del enunciado << ningún A es B>>, representado en un diagrama es:',
         'opciones': ['RECURSOS/54a.jpg', 'RECURSOS/54b.jpg', 'RECURSOS/54c.jpg', 'RECURSOS/55d.jpg'],
-        'respuesta_correcta': 'RECURSOS/opcion2.png'
+        'respuesta_correcta': 'RECURSOS/54b.jpg'
     },
 
-    #------------------------------------------------------------------------
+    #------------------------------------------------------------------------ imagenes
     {
-        #pregunta imagenes
         'grado': 9,
         'tipo': 'imagen',
-        'pregunta': '¿2Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.?',
-        'imagen': 'RECURSOS/pregunta1.png',
-        'texto_debajo_imagen': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        'pregunta': '',
+        'imagen': 'RECURSOS/.png',
+        'texto_debajo_imagen': '',
         'opciones': ['3', '1', '2', '4'],
         'respuesta_correcta': '2'
     },
-
+    {
+        'grado': 10,
+        'tipo': 'imagen',
+        'pregunta': 'de las figuras 1,2,3,4,5 y 6, la que representa la vista lateral izquierda de la figura inical es:',
+        'imagen': 'RECURSOS/p10.png',
+        'texto_debajo_imagen': '',
+        'opciones': ['2', '1', '5', '6'],
+        'respuesta_correcta': '1'
+    },
+    {
+        'grado': 11,
+        'tipo': 'imagen',
+        'pregunta': '¿Qué número debe reemplazar el signo de interrogación?',
+        'imagen': 'RECURSOS/p9.png',
+        'texto_debajo_imagen': '',
+        'opciones': ['1', '3', '6', '8'],
+        'respuesta_correcta': '1'
+    },
+    {
+        'grado': 9,
+        'tipo': 'imagen',
+        'pregunta': 'william miro en el espejo para ver la hora que marcaba el reloj, y esto es lo que vio',
+        'imagen': 'RECURSOS/p8.png',
+        'texto_debajo_imagen': 'pero el reloj había sido colgado al revés. ¿Qué hora es en realidad',
+        'opciones': ['las 10:00', 'Las 8:00', 'Las 2:00', 'Las 4:00'],
+        'respuesta_correcta': 'Las 4:00'
+    },
+    {
+        'grado': 10,
+        'tipo': 'imagen',
+        'pregunta': 'La cantidad de triángulos de igual tamaño de la figura 1 que tendrían la figura 12, siguiendo con el patrón dado es:',
+        'imagen': 'RECURSOS/p7.png',
+        'texto_debajo_imagen': '',
+        'opciones': ['3', '1', '2', '4'],
+        'respuesta_correcta': '2'
+    },
+        {
+        'grado': 11,
+        'tipo': 'imagen',
+        'pregunta': 'Un trozo de madera ha sido marcado en cuadrados iguales. ¿Cuántos cortes rectos deberán realizarse como mínimo, de modo que todos los cuadrados que contiene las letras estén separados?',
+        'imagen': 'RECURSOS/p5.png',
+        'texto_debajo_imagen': '',
+        'opciones': ['2 como mínimo', '3 como minimo', '4 como mínimo', '5 como mínimo'],
+        'respuesta_correcta': '3 como minimo'
+    },
+        {
+        'grado': 9,
+        'tipo': 'imagen',
+        'pregunta': '¿Cuántas monedas como mínimo se debe mover, para que la figura (I9 se convierta en la fijura (II)?',
+        'imagen': 'RECURSOS/p6.png',
+        'texto_debajo_imagen': '',
+        'opciones': ['2', '3', '4', '5'],
+        'respuesta_correcta': '3'
+    },
+    {
+        'grado': 10,
+        'tipo': 'imagen',
+        'pregunta': '¿Qué número falta?',
+        'imagen': 'RECURSOS/p1.png',
+        'texto_debajo_imagen': '',
+        'opciones': ['1231', '1332', '1331', '1321'],
+        'respuesta_correcta': '1331'
+    },
+    {
+        'grado': 11,
+        'tipo': 'imagen',
+        'pregunta': 'Halla el área de la figura',
+        'imagen': 'RECURSOS/p4.png',
+        'texto_debajo_imagen': '',
+        'opciones': ['3', '1', '2', '4'],
+        'respuesta_correcta': '2'
+    },
+    {
+        'grado': 9,
+        'tipo': 'imagen',
+        'pregunta': 'Se presenta:',
+        'imagen': 'RECURSOS/p3.png',
+        'texto_debajo_imagen': '',
+        'opciones': ['3', '1', '2', '4'],
+        'respuesta_correcta': '2'
+    },
+    {
+        'grado': 10,
+        'tipo': 'imagen',
+        'pregunta': 'En una encuesta aplicada a $0 estudiantes se obtuvo los siguientes resultados',
+        'imagen': 'RECURSOS/p2.png',
+        'texto_debajo_imagen': '¿qué porcentaje de alumnos prefieren el área de comunicación?',
+        'opciones': ['20%', '30%', '40%', '35%'],
+        'respuesta_correcta': '30%'
+    },
+    {
+        'grado': 11,
+        'tipo': 'imagen',
+        'pregunta': 'el número de cuadrados que hay en la figura es:',
+        'imagen': 'RECURSOS/p11.png',
+        'texto_debajo_imagen': '',
+        'opciones': ['19', '11', '30', '29'],
+        'respuesta_correcta': '11'
+    },
 ]
 
 preguntas_disponibles = []
