@@ -176,7 +176,7 @@ preguntas = [
         'pregunta': '"Todos los celulares son rojos", es lo mismo que afirmar:',
         'opciones': ['Algunos celulares son rojos', 'Algunos celulares son negros', 'No todos los celulares son blancos', 'No hay celulares que no sean rojos'],
         'respuesta_correcta': 'No hay celulares que no sean rojos'
-    },#---20---
+    },
     {
         'grado': 11,
         'tipo': 'texto',
@@ -246,7 +246,7 @@ preguntas = [
         'pregunta': 'Un tren de pasajeros se compone de doce vagones. Cada vagón tiene seis compartimientos y cada compartimiento tiene seis lugares para viajar sentado; ¿cuántos pasajeros pueden viajar sentados en el tren?',
         'opciones': ['342', '172', '422', '432'],
         'respuesta_correcta': '432'
-    },#--30--
+    },
     {
         'grado': 9,
         'tipo': 'texto',
@@ -293,7 +293,7 @@ preguntas = [
         'grado': 9,
         'tipo': 'texto',
         'pregunta': 'En la siguiente secuencia: 54, 49, X, 39, 34... El número que se debe remplazar por X es:',
-        'opciones': ['47', '44', '45a', '42'],
+        'opciones': ['47', '44', '45', '42'],
         'respuesta_correcta': '44'
     },
     {
@@ -316,7 +316,7 @@ preguntas = [
         'pregunta': 'Ely le dice a Lenin: Si el pasado mañana de ayer es jueves, ¿qué día será el anteayer, del ayer del mañana?',
         'opciones': ['Miercoles', 'Martes', 'Lunes', 'Domingo'],
         'respuesta_correcta': 'Lunes'
-    },#--40--
+    },
     {
         'grado': 10,
         'tipo': 'texto',
@@ -360,13 +360,6 @@ preguntas = [
         'respuesta_correcta': '4'
     },
     {
-        'grado': 9,
-        'tipo': 'texto',
-        'pregunta': 'en la siguiente secuencia: 54,49,X, 39,34... El número que se debe remplazar por X es:',
-        'opciones': ['47', '44', '45', '42'],
-        'respuesta_correcta': '44'
-    },
-    {
         'grado': 10,
         'tipo': 'texto',
         'pregunta': 'Si 5 máquinas hacen 5 artículos en 5 minutos. ¿Cuánto tiempo necesitarán 100 máquinas para hacer 100 artículos?',
@@ -379,7 +372,7 @@ preguntas = [
         'pregunta': 'En una caja hay 5 bolas numeradas del 1 al 5. Se extrae al azar una bola de la caja se restituye y se repite la operación dos veces más. Se registra (de izquierda a derecha) los números de las bolas que van saliendo, según el orden de salida de modo que resulte un número de tres cifras. ¿Cuántos diferentes de tres cifras pueden obtenerse de este modo',
         'opciones': ['60', '125', '85', '100'],
         'respuesta_correcta': '125'
-    },#--50--
+    },
     {
         'grado': 9,
         'tipo': 'texto',
@@ -449,7 +442,7 @@ preguntas = [
         'pregunta': 'La negación del enunciado <<ningún A es B>>, representado en un diagrama es:',
         'opciones': ['PROYECTO-SECRETO/RECURSOS/54a.jpg', 'PROYECTO-SECRETO/RECURSOS/54b.jpg', 'PROYECTO-SECRETO/RECURSOS/54c.jpg', 'PROYECTO-SECRETO/RECURSOS/55d.jpg'],
         'respuesta_correcta': 'PROYECTO-SECRETO/RECURSOS/54b.jpg'
-    },#--60--
+    },
     {
         'grado': 10,
         'tipo': 'imagen',
@@ -539,7 +532,7 @@ preguntas = [
         'texto_debajo_imagen': '¿Qué porcentaje de alumnos prefieren el área de comunicación?',
         'opciones': ['20%', '30%', '40%', '35%'],
         'respuesta_correcta': '30%'
-    },#--70--
+    },
     {
         'grado': 11,
         'tipo': 'imagen',
@@ -593,7 +586,7 @@ preguntas = [
         'texto_debajo_imagen': '',
         'opciones': ['3', '1', '2', '4'],
         'respuesta_correcta': '2'
-    },#--76--
+    },#--74--
 ]
 
 preguntas_disponibles = []
