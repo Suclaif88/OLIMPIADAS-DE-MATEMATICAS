@@ -105,7 +105,7 @@ preguntas = [
         'pregunta': 'AMERICA = 1734651, INDIA = 68961, CANADA = ?, ¿Cómo se escribiria Canadá de acuerdo con las representaciones?',
         'opciones': ['715148', '519581', '518191', '719181'],
         'respuesta_correcta': '518191'
-    },#10
+    },
     {
         'grado': 10,
         'tipo': 'texto',
@@ -176,7 +176,7 @@ preguntas = [
         'pregunta': '"Todos los celulares son rojos", es lo mismo que afirmar:',
         'opciones': ['Algunos celulares son rojos', 'Algunos celulares son negros', 'No todos los celulares son blancos', 'No hay celulares que no sean rojos'],
         'respuesta_correcta': 'No hay celulares que no sean rojos'
-    },#20
+    },#---20---
     {
         'grado': 11,
         'tipo': 'texto',
@@ -246,7 +246,7 @@ preguntas = [
         'pregunta': 'Un tren de pasajeros se compone de doce vagones. Cada vagón tiene seis compartimientos y cada compartimiento tiene seis lugares para viajar sentado; ¿cuántos pasajeros pueden viajar sentados en el tren?',
         'opciones': ['342', '172', '422', '432'],
         'respuesta_correcta': '432'
-    },
+    },#--30--
     {
         'grado': 9,
         'tipo': 'texto',
@@ -316,7 +316,7 @@ preguntas = [
         'pregunta': 'Ely le dice a Lenin: Si el pasado mañana de ayer es jueves, ¿qué día será el anteayer, del ayer del mañana?',
         'opciones': ['Miercoles', 'Martes', 'Lunes', 'Domingo'],
         'respuesta_correcta': 'Lunes'
-    },
+    },#--40--
     {
         'grado': 10,
         'tipo': 'texto',
@@ -367,40 +367,6 @@ preguntas = [
         'respuesta_correcta': '44'
     },
     {
-    'grado': 9,
-    'tipo': 'mixta', 
-    'pregunta': 'Texto de la pregunta',
-    'opciones': ['PROYECTO-SECRETO/RECURSOS/opcion1.png', 'PROYECTO-SECRETO/RECURSOS/opcion2.png', 'PROYECTO-SECRETO/RECURSOS/opcion3.png', 'PROYECTO-SECRETO/RECURSOS/opcion4.png'],
-    'respuesta_correcta': 'PROYECTO-SECRETO/RECURSOS/opcion2.png'
-    },
-    {
-        'grado': 9,
-        'tipo': 'imagen',
-        'pregunta': '¿2Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.?',
-        'imagen': 'PROYECTO-SECRETO/RECURSOS/pregunta1.png',
-        'texto_debajo_imagen': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        'opciones': ['3', '1', '2', '4'],
-        'respuesta_correcta': '2'
-    },
-    {
-        'grado': 9,
-        'tipo': 'imagen',
-        'pregunta': '¿4Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.?',
-        'imagen': 'PROYECTO-SECRETO/RECURSOS/pregunta2.png',
-        'texto_debajo_imagen': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        'opciones': ['3', '1', '2', '4'],
-        'respuesta_correcta': '2'
-    },
-    {
-        'grado': 10,
-        'tipo': 'imagen',
-        'pregunta': '¿1Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.?',
-        'imagen': 'PROYECTO-SECRETO/RECURSOS/pregunta1.png',
-        'texto_debajo_imagen': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        'opciones': ['1', '2', '3', '4'],
-        'respuesta_correcta': '2'
-    },
-    {
         'grado': 10,
         'tipo': 'texto',
         'pregunta': 'Si 5 máquinas hacen 5 artículos en 5 minutos. ¿Cuánto tiempo necesitarán 100 máquinas para hacer 100 artículos?',
@@ -413,7 +379,7 @@ preguntas = [
         'pregunta': 'En una caja hay 5 bolas numeradas del 1 al 5. Se extrae al azar una bola de la caja se restituye y se repite la operación dos veces más. Se registra (de izquierda a derecha) los números de las bolas que van saliendo, según el orden de salida de modo que resulte un número de tres cifras. ¿Cuántos diferentes de tres cifras pueden obtenerse de este modo',
         'opciones': ['60', '125', '85', '100'],
         'respuesta_correcta': '125'
-    },
+    },#--50--
     {
         'grado': 9,
         'tipo': 'texto',
@@ -441,15 +407,6 @@ preguntas = [
         'pregunta': 'En una caja había 20 sombreros blancos y 13 sombreros neros. Jorge extrajo al azar de la caja tres sombreros uno tras otro sin restituirlos a la caja, y los tres sombreros extraídos resultaron negros. ¿Cuál es la probabilidad de que el cuarto sombrero extraído al azar sea también negro?',
         'opciones': ['13/33', '10/33', '1/3', '1/33'],
         'respuesta_correcta': '1/3'
-    },
-    {
-        'grado': 9,
-        'tipo': 'imagen',
-        'pregunta': '¿3Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.?',
-        'imagen': 'PROYECTO-SECRETO/RECURSOS/pregunta2.png',
-        'texto_debajo_imagen': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        'opciones': ['3', '1', '2', '4'],
-        'respuesta_correcta': '2'
     },
     {
         'grado': 10,
@@ -490,14 +447,14 @@ preguntas = [
         'grado': 11,
         'tipo': 'mixta', 
         'pregunta': 'La negación del enunciado <<ningún A es B>>, representado en un diagrama es:',
-        'opciones': ['RECURSOS/54a.jpg', 'RECURSOS/54b.jpg', 'RECURSOS/54c.jpg', 'RECURSOS/55d.jpg'],
-        'respuesta_correcta': 'RECURSOS/54b.jpg'
-    },
+        'opciones': ['PROYECTO-SECRETO/RECURSOS/54a.jpg', 'PROYECTO-SECRETO/RECURSOS/54b.jpg', 'PROYECTO-SECRETO/RECURSOS/54c.jpg', 'PROYECTO-SECRETO/RECURSOS/55d.jpg'],
+        'respuesta_correcta': 'PROYECTO-SECRETO/RECURSOS/54b.jpg'
+    },#--60--
     {
         'grado': 10,
         'tipo': 'imagen',
         'pregunta': 'De las figuras 1, 2, 3, 4, 5 y 6, la que representa la vista lateral izquierda de la figura inical es:',
-        'imagen': 'RECURSOS/p10.png',
+        'imagen': 'PROYECTO-SECRETO/RECURSOS/p10.png',
         'texto_debajo_imagen': '',
         'opciones': ['2', '1', '5', '6'],
         'respuesta_correcta': '1'
@@ -506,7 +463,7 @@ preguntas = [
         'grado': 11,
         'tipo': 'imagen',
         'pregunta': '¿Qué número debe reemplazar el signo de interrogación?',
-        'imagen': 'RECURSOS/p9.png',
+        'imagen': 'PROYECTO-SECRETO/RECURSOS/p9.png',
         'texto_debajo_imagen': '',
         'opciones': ['1', '3', '6', '8'],
         'respuesta_correcta': '1'
@@ -515,7 +472,7 @@ preguntas = [
         'grado': 9,
         'tipo': 'imagen',
         'pregunta': 'William miro en el espejo para ver la hora que marcaba el reloj, y esto es lo que vio:',
-        'imagen': 'RECURSOS/p8.png',
+        'imagen': 'PROYECTO-SECRETO/RECURSOS/p8.png',
         'texto_debajo_imagen': 'Pero el reloj había sido colgado al revés. ¿Qué hora es en realidad',
         'opciones': ['las 10:00', 'Las 8:00', 'Las 2:00', 'Las 4:00'],
         'respuesta_correcta': 'Las 4:00'
@@ -533,7 +490,7 @@ preguntas = [
         'grado': 11,
         'tipo': 'imagen',
         'pregunta': 'Un trozo de madera ha sido marcado en cuadrados iguales. ¿Cuántos cortes rectos deberán realizarse como mínimo, de modo que todos los cuadrados que contiene las letras estén separados?',
-        'imagen': 'RECURSOS/p5.png',
+        'imagen': 'PROYECTO-SECRETO/RECURSOS/p5.png',
         'texto_debajo_imagen': '',
         'opciones': ['2 como mínimo', '3 como minimo', '4 como mínimo', '5 como mínimo'],
         'respuesta_correcta': '3 como minimo'
@@ -542,7 +499,7 @@ preguntas = [
         'grado': 9,
         'tipo': 'imagen',
         'pregunta': '¿Cuántas monedas como mínimo se debe mover, para que la figura (I) se convierta en la figura (II)?',
-        'imagen': 'RECURSOS/p6.png',
+        'imagen': 'PROYECTO-SECRETO/RECURSOS/p6.png',
         'texto_debajo_imagen': '',
         'opciones': ['2', '3', '4', '5'],
         'respuesta_correcta': '3'
@@ -551,7 +508,7 @@ preguntas = [
         'grado': 10,
         'tipo': 'imagen',
         'pregunta': '¿Qué número falta?',
-        'imagen': 'RECURSOS/p1.png',
+        'imagen': 'PROYECTO-SECRETO/RECURSOS/p1.png',
         'texto_debajo_imagen': '',
         'opciones': ['1231', '1332', '1331', '1321'],
         'respuesta_correcta': '1331'
@@ -560,7 +517,7 @@ preguntas = [
         'grado': 11,
         'tipo': 'imagen',
         'pregunta': 'Halla el área de la figura',
-        'imagen': 'RECURSOS/p4.png',
+        'imagen': 'PROYECTO-SECRETO/RECURSOS/p4.png',
         'texto_debajo_imagen': '',
         'opciones': ['80 m^2', '88 m^2', '92 m^2', '96 m^2'],
         'respuesta_correcta': '88 m^2'
@@ -569,7 +526,7 @@ preguntas = [
         'grado': 9,
         'tipo': 'imagen',
         'pregunta': 'Se presenta:',
-        'imagen': 'RECURSOS/p3.png',
+        'imagen': 'PROYECTO-SECRETO/RECURSOS/p3.png',
         'texto_debajo_imagen': '',
         'opciones': ['1000', '1210', '200', '4010'],
         'respuesta_correcta': '210'
@@ -578,16 +535,16 @@ preguntas = [
         'grado': 10,
         'tipo': 'imagen',
         'pregunta': 'En una encuesta aplicada a 40 estudiantes se obtuvo los siguientes resultados',
-        'imagen': 'RECURSOS/p2.png',
+        'imagen': 'PROYECTO-SECRETO/RECURSOS/p2.png',
         'texto_debajo_imagen': '¿Qué porcentaje de alumnos prefieren el área de comunicación?',
         'opciones': ['20%', '30%', '40%', '35%'],
         'respuesta_correcta': '30%'
-    },
+    },#--70--
     {
         'grado': 11,
         'tipo': 'imagen',
         'pregunta': 'El número de cuadrados que hay en la figura es:',
-        'imagen': 'RECURSOS/p11.png',
+        'imagen': 'PROYECTO-SECRETO/RECURSOS/p11.png',
         'texto_debajo_imagen': '',
         'opciones': ['19', '11', '30', '29'],
         'respuesta_correcta': '11'
@@ -596,7 +553,7 @@ preguntas = [
         'grado': 9,
         'tipo': 'imagen',
         'pregunta': '',
-        'imagen': 'RECURSOS/p16.png',
+        'imagen': 'PROYECTO-SECRETO/RECURSOS/p16.png',
         'texto_debajo_imagen': '',
         'opciones': ['9 kg', '10kg', '11 kg', '12'],
         'respuesta_correcta': '12'
@@ -605,7 +562,7 @@ preguntas = [
         'grado': 9,
         'tipo': 'imagen',
         'pregunta': 'Un trozo de cartón tiene la forma de la figura mostrada (las regiones m, n, p , q, r son cuadrados) y se dobla a lo largo de las líneas punteadas para formar una caja abierta.',
-        'imagen': 'RECURSOS/p12.png',
+        'imagen': 'PROYECTO-SECRETO/RECURSOS/p12.png',
         'texto_debajo_imagen': 'Si la caja se coloca en una mesa de manera que la parte abierta quede hacía arriba. ¿Qué región constituye la base de la caja?',
         'opciones': ['p', 'q', 'r', 'm'],
         'respuesta_correcta': 'p'
@@ -614,7 +571,7 @@ preguntas = [
         'grado': 9,
         'tipo': 'imagen',
         'pregunta': 'En el siguiente gráfico, ¿cuántos cerillos se deben mover, como mínimo, para obtener 5 cuadrados de un cerillo por lado?',
-        'imagen': 'RECURSOS/p13.png',
+        'imagen': 'PROYECTO-SECRETO/RECURSOS/p13.png',
         'texto_debajo_imagen': '',
         'opciones': ['1', '2', '3', '4'],
         'respuesta_correcta': '2'
@@ -623,7 +580,7 @@ preguntas = [
         'grado': 9,
         'tipo': 'imagen',
         'pregunta': 'En el gráfico, ¿cuál es la menor cantidad de cerillos que se deben mover para formar exactamente 4 cuadrados iguales?',
-        'imagen': 'RECURSOS/p14.png',
+        'imagen': 'PROYECTO-SECRETO/RECURSOS/p14.png',
         'texto_debajo_imagen': '',
         'opciones': ['3', '1', '2', '4'],
         'respuesta_correcta': '2'
@@ -632,11 +589,11 @@ preguntas = [
         'grado': 9,
         'tipo': 'imagen',
         'pregunta': '¿Cuántos fichas como mínimo, deben ser cambiadas de posición para que el resultado sea 2?',
-        'imagen': 'RECURSOS/p15.png',
+        'imagen': 'PROYECTO-SECRETO/RECURSOS/p15.png',
         'texto_debajo_imagen': '',
         'opciones': ['3', '1', '2', '4'],
         'respuesta_correcta': '2'
-    },
+    },#--76--
 ]
 
 preguntas_disponibles = []
