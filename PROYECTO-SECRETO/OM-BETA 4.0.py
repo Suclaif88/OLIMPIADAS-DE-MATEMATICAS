@@ -6,7 +6,7 @@ import pygame
 def sonido():
     pygame.mixer.init()
 
-    fondo_musical = pygame.mixer.Sound("RECURSOS/fondo.mp3")
+    fondo_musical = pygame.mixer.Sound("PROYECTO-SECRETO/RECURSOS/fondo.mp3")
 
     canal_fondo = pygame.mixer.Channel(0)
 
@@ -21,7 +21,7 @@ def detener_audio():
 
 def reproducir_bien():
     pygame.mixer.init()
-    pygame.mixer.music.load("RECURSOS/bien.mp3")
+    pygame.mixer.music.load("PROYECTO-SECRETO/RECURSOS/bien.mp3")
     pygame.mixer.music.play(-1)
 
 def detener_audio_bien():
@@ -29,7 +29,7 @@ def detener_audio_bien():
 
 def reproducir_mal():
     pygame.mixer.init()
-    pygame.mixer.music.load("RECURSOS/mal.mp3")
+    pygame.mixer.music.load("PROYECTO-SECRETO/RECURSOS/mal.mp3")
     pygame.mixer.music.play(-1)
 
 def detener_audio_mal():
@@ -360,6 +360,47 @@ preguntas = [
         'respuesta_correcta': '4'
     },
     {
+        'grado': 9,
+        'tipo': 'texto',
+        'pregunta': 'en la siguiente secuencia: 54,49,X, 39,34... El número que se debe remplazar por X es:',
+        'opciones': ['47', '44', '45', '42'],
+        'respuesta_correcta': '44'
+    },
+    {
+    'grado': 9,
+    'tipo': 'mixta', 
+    'pregunta': 'Texto de la pregunta',
+    'opciones': ['PROYECTO-SECRETO/RECURSOS/opcion1.png', 'PROYECTO-SECRETO/RECURSOS/opcion2.png', 'PROYECTO-SECRETO/RECURSOS/opcion3.png', 'PROYECTO-SECRETO/RECURSOS/opcion4.png'],
+    'respuesta_correcta': 'PROYECTO-SECRETO/RECURSOS/opcion2.png'
+    },
+    {
+        'grado': 9,
+        'tipo': 'imagen',
+        'pregunta': '¿2Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.?',
+        'imagen': 'PROYECTO-SECRETO/RECURSOS/pregunta1.png',
+        'texto_debajo_imagen': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        'opciones': ['3', '1', '2', '4'],
+        'respuesta_correcta': '2'
+    },
+    {
+        'grado': 9,
+        'tipo': 'imagen',
+        'pregunta': '¿4Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.?',
+        'imagen': 'PROYECTO-SECRETO/RECURSOS/pregunta2.png',
+        'texto_debajo_imagen': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        'opciones': ['3', '1', '2', '4'],
+        'respuesta_correcta': '2'
+    },
+    {
+        'grado': 10,
+        'tipo': 'imagen',
+        'pregunta': '¿1Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.?',
+        'imagen': 'PROYECTO-SECRETO/RECURSOS/pregunta1.png',
+        'texto_debajo_imagen': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        'opciones': ['1', '2', '3', '4'],
+        'respuesta_correcta': '2'
+    },
+    {
         'grado': 10,
         'tipo': 'texto',
         'pregunta': 'Si 5 máquinas hacen 5 artículos en 5 minutos. ¿Cuánto tiempo necesitarán 100 máquinas para hacer 100 artículos?',
@@ -386,7 +427,7 @@ preguntas = [
         'pregunta': 'Arrojamos un dado y luego de ello arrojamos una moneda, ¿cuál será el número de resultados posibles de este experimento?',
         'opciones': ['7', '12', '72', '8'],
         'respuesta_correcta': '12'
-    },#50
+    },
     {
         'grado': 11,
         'tipo': 'texto',
@@ -400,6 +441,15 @@ preguntas = [
         'pregunta': 'En una caja había 20 sombreros blancos y 13 sombreros neros. Jorge extrajo al azar de la caja tres sombreros uno tras otro sin restituirlos a la caja, y los tres sombreros extraídos resultaron negros. ¿Cuál es la probabilidad de que el cuarto sombrero extraído al azar sea también negro?',
         'opciones': ['13/33', '10/33', '1/3', '1/33'],
         'respuesta_correcta': '1/3'
+    },
+    {
+        'grado': 9,
+        'tipo': 'imagen',
+        'pregunta': '¿3Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.?',
+        'imagen': 'PROYECTO-SECRETO/RECURSOS/pregunta2.png',
+        'texto_debajo_imagen': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        'opciones': ['3', '1', '2', '4'],
+        'respuesta_correcta': '2'
     },
     {
         'grado': 10,
@@ -435,18 +485,14 @@ preguntas = [
         'pregunta': 'En una familia, cada hermano tiene 4 hermanas y 4 hermanos, y cada hermana tiene 5 hermanos y 3 hermanas. ¿Cuántos hijos son en total?',
         'opciones': ['6', '8', '9', '10'],
         'respuesta_correcta': '9'
-    },#total =57
-    #----------------------------------------------------------------------
+    },
     {
-        #preguntas con respuesta imagenes
         'grado': 11,
         'tipo': 'mixta', 
         'pregunta': 'La negación del enunciado <<ningún A es B>>, representado en un diagrama es:',
         'opciones': ['RECURSOS/54a.jpg', 'RECURSOS/54b.jpg', 'RECURSOS/54c.jpg', 'RECURSOS/55d.jpg'],
         'respuesta_correcta': 'RECURSOS/54b.jpg'
-    },#tolal =1
-
-    #------------------------------------------------------------------------ imagenes
+    },
     {
         'grado': 10,
         'tipo': 'imagen',
@@ -478,12 +524,12 @@ preguntas = [
         'grado': 10,
         'tipo': 'imagen',
         'pregunta': 'La cantidad de triángulos de igual tamaño de la figura 1 que tendrían la figura 12, siguiendo con el patrón dado es:',
-        'imagen': 'RECURSOS/p7.png',
+        'imagen': 'PROYECTO-SECRETO/RECURSOS/p7.png',
         'texto_debajo_imagen': '',
         'opciones': ['3', '1', '2', '4'],
         'respuesta_correcta': '2'
     },
-        {
+    {
         'grado': 11,
         'tipo': 'imagen',
         'pregunta': 'Un trozo de madera ha sido marcado en cuadrados iguales. ¿Cuántos cortes rectos deberán realizarse como mínimo, de modo que todos los cuadrados que contiene las letras estén separados?',
@@ -492,7 +538,7 @@ preguntas = [
         'opciones': ['2 como mínimo', '3 como minimo', '4 como mínimo', '5 como mínimo'],
         'respuesta_correcta': '3 como minimo'
     },
-        {
+    {
         'grado': 9,
         'tipo': 'imagen',
         'pregunta': '¿Cuántas monedas como mínimo se debe mover, para que la figura (I) se convierta en la figura (II)?',
@@ -536,7 +582,7 @@ preguntas = [
         'texto_debajo_imagen': '¿Qué porcentaje de alumnos prefieren el área de comunicación?',
         'opciones': ['20%', '30%', '40%', '35%'],
         'respuesta_correcta': '30%'
-    },#10
+    },
     {
         'grado': 11,
         'tipo': 'imagen',
@@ -590,7 +636,7 @@ preguntas = [
         'texto_debajo_imagen': '',
         'opciones': ['3', '1', '2', '4'],
         'respuesta_correcta': '2'
-    },#6 total = 16
+    },
 ]
 
 preguntas_disponibles = []
@@ -627,6 +673,10 @@ def abrir_ventana_juego(grado):
         for boton in botones_opciones:
             boton.destroy()
         botones_opciones = []
+        
+        opciones = pregunta_actual['opciones']
+        random.shuffle(opciones)
+        
         if pregunta_actual['tipo'] == 'imagen':
             imagen = Image.open(pregunta_actual['imagen'])
             imagen = imagen.resize((400, 300))
@@ -648,7 +698,7 @@ def abrir_ventana_juego(grado):
                 boton = tk.Button(opciones_frame, text="", image=imagen_opcion, compound="center", width=imagen_width, height=imagen_height, command=lambda i=i: verificar_respuesta(pregunta_actual['opciones'][i]))
                 boton.image = imagen_opcion
             else:
-                boton = tk.Button(opciones_frame, text=opcion, font=('Arial', 12), width=20, height=2, command=lambda i=i: verificar_respuesta(pregunta_actual['opciones'][i]))
+                boton = tk.Button(opciones_frame, text=opcion, font=('Arial', 12), width=30, height=2, command=lambda i=i: verificar_respuesta(pregunta_actual['opciones'][i]))
             boton.grid(row=i // 2, column=i % 2, pady=5, padx=10)
             botones_opciones.append(boton)
             boton.config(bg='salmon', fg='black', highlightbackground='blue', borderwidth=7, font=('Arial', 12))
@@ -746,7 +796,7 @@ def abrir_ventana_juego(grado):
     ventana_juego.title(grado)
     ventana_juego.attributes('-fullscreen', True)
 
-    imagen_fondo_juego = Image.open('RECURSOS/fondo_juego.png')
+    imagen_fondo_juego = Image.open('PROYECTO-SECRETO/RECURSOS/fondo_juego.png')
     imagen_fondo_juego = ImageTk.PhotoImage(imagen_fondo_juego)
 
     fondo_label_juego = tk.Label(ventana_juego, image=imagen_fondo_juego)
@@ -787,9 +837,9 @@ def abrir_ventana_juego(grado):
     terminar_boton = tk.Button(ventana_juego, text='TERMINAR JUEGO', font=('Arial', 12),  bg='red', width=40, command=terminar_juego)
     terminar_boton.pack(pady=10)
 
-    imagen_respuesta_correcta = Image.open('RECURSOS/bien.png')
+    imagen_respuesta_correcta = Image.open('PROYECTO-SECRETO/RECURSOS/bien.png')
     imagen_respuesta_correcta = ImageTk.PhotoImage(imagen_respuesta_correcta)
-    imagen_respuesta_incorrecta = Image.open('RECURSOS/mal.png')
+    imagen_respuesta_incorrecta = Image.open('PROYECTO-SECRETO/RECURSOS/mal.png')
     imagen_respuesta_incorrecta = ImageTk.PhotoImage(imagen_respuesta_incorrecta)
 
     mostrar_pregunta()
@@ -803,10 +853,10 @@ ventana_inicio = tk.Tk()
 ventana_inicio.title('Olimpiadas de matemáticas')
 ventana_inicio.attributes('-fullscreen', True)
 
-icono = tk.PhotoImage(file="RECURSOS/icono.png")
+icono = tk.PhotoImage(file="PROYECTO-SECRETO/RECURSOS/icono.png")
 ventana_inicio.iconphoto(True, icono)
 
-imagen_fondo_inicio = Image.open('RECURSOS/fondo_inicio.png')
+imagen_fondo_inicio = Image.open('PROYECTO-SECRETO/RECURSOS/fondo_inicio.png')
 imagen_fondo_inicio = ImageTk.PhotoImage(imagen_fondo_inicio)
 fondo_label_inicio = tk.Label(ventana_inicio, image=imagen_fondo_inicio)
 fondo_label_inicio.place(x=0, y=0, relwidth=1, relheight=1)
