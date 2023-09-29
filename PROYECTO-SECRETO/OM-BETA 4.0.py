@@ -35,6 +35,13 @@ def reproducir_mal():
 
 def detener_audio_mal():
     pygame.mixer.music.stop()
+    
+#------------------------------------------------------
+def accion_al_terminar_tiempo():
+    print("¡Tiempo terminado!")
+    
+#------------------------------------------------------
+
 
 preguntas = [
     {
@@ -738,10 +745,35 @@ def abrir_ventana_juego(grado):
         resultado_imagen.pack_forget()
         resultado_texto.config(text='', fg='white')
         mostrar_pregunta()
+        
+    #------------------------------------------------------
+    
+    def actualizar_cronometro():
+     tiempo_actual = time.time() - tiempo_inicial
+     minutos = int(tiempo_actual / 60)
+     segundos = int(tiempo_actual % 60)
+     cronometro.config(text=f"{minutos:02}:{segundos:02}")
+     ventana_juego.after(1000, actualizar_cronometro)
+     
+     #------------------------------------------------------
 
     ventana_juego = tk.Toplevel()
     ventana_juego.title(grado)
     ventana_juego.attributes('-fullscreen', True)
+    
+    #------------------------------------------------------
+    
+    tiempo_inicial = time.time()
+    
+    cronometro = tk.Label(ventana_juego, text="00:00", font=("Arial", 24))
+    cronometro.pack()
+    cronometro.place(relx=0.9, rely=0.1, anchor=tk.SE)
+
+    actualizar_cronometro()
+
+    ventana_juego.after(90000, accion_al_terminar_tiempo)
+    
+    #------------------------------------------------------
 
     imagen_fondo_juego = Image.open('PROYECTO-SECRETO/RECURSOS/fondo_juego.png')
     imagen_fondo_juego = ImageTk.PhotoImage(imagen_fondo_juego)
