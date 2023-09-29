@@ -600,7 +600,7 @@ imagen_respuesta_incorrecta = None
 preguntas_respondidas = set()
 
 def abrir_ventana_juego(grado):
-    global preguntas_disponibles, pregunta_actual, imagen_pregunta_actual, imagen_respuesta_correcta, imagen_respuesta_incorrecta, puntaje_actual, tiempo_inicial
+    global preguntas_disponibles, pregunta_actual, imagen_pregunta_actual, imagen_respuesta_correcta, imagen_respuesta_incorrecta, puntaje_actual, tiempo_inicial, tiempo_restante
     
     preguntas_disponibles = [pregunta for pregunta in preguntas if pregunta['grado'] == grado]
 
@@ -700,6 +700,9 @@ def abrir_ventana_juego(grado):
         puntaje_label.config(text='')
         texto_debajo_imagen.config(text='')
         pregunta_imagen.pack_forget()
+        empezar_tiempo.config(state=tk.DISABLED)
+        cronometro.config(text="00:00")
+        empezar_tiempo.config(bg="orange red")
         ventana_juego.after(3000, ventana_juego.destroy)
 
     def avanzar_pregunta():
@@ -715,6 +718,9 @@ def abrir_ventana_juego(grado):
         puntaje_label.config(text='')
         texto_debajo_imagen.config(text='')
         pregunta_imagen.pack_forget()
+        empezar_tiempo.config(state=tk.DISABLED)
+        empezar_tiempo.config(bg="orange red")
+        cronometro.config(text="00:00")
         if puntaje_actual <= 20:
             resultado_texto.config(fg='red')
         else:
@@ -730,6 +736,9 @@ def abrir_ventana_juego(grado):
         puntaje_label.config(text='')
         texto_debajo_imagen.config(text='')
         pregunta_imagen.pack_forget()
+        empezar_tiempo.config(state=tk.DISABLED)
+        empezar_tiempo.config(bg="orange red")
+        cronometro.config(text="00:00")
         if puntaje_actual <= 20:
             resultado_texto.config(fg='red')
         else:
@@ -738,52 +747,66 @@ def abrir_ventana_juego(grado):
         siguiente_boton.config(state=tk.DISABLED)
         resultado_imagen.pack_forget()
         resultado_texto.config(text='', fg='white')
+        cronometro.config(fg="black")
+        pregunta_texto.config(fg='black')
+        empezar_tiempo.config(state=tk.NORMAL)
+        empezar_tiempo.config(bg="lawn green")
+        cronometro.config(text="01:30")
+        reiniciar_tiempo()
         mostrar_pregunta()
+    
+    def iniciar_tiempo():
+        global tiempo_restante, tiempo_iniciado
+        tiempo_iniciado = True
+        tiempo_restante = tiempo_inicial
+        empezar_tiempo.config(state=tk.DISABLED)
+        empezar_tiempo.config(bg="orange red")
+        actualizar_cronometro()
         
-        
-        #----------
-     cronometro.config(fg="black")
-        #----------
-        
-        
-    #------------------------------------------------------
+    def reiniciar_tiempo():
+        global tiempo_restante, tiempo_iniciado
+        tiempo_restante = tiempo_inicial
+        tiempo_iniciado = False
     
     def actualizar_cronometro():
-        nonlocal tiempo_restante
+        global tiempo_restante, tiempo_iniciado
         
         minutos = tiempo_restante // 60
         segundos = tiempo_restante % 60
 
         cronometro.config(text=f"{minutos:02}:{segundos:02}")
     
-        if tiempo_restante > 0:
+        if tiempo_restante > 0 and tiempo_iniciado:
          tiempo_restante -= 1
          ventana_juego.after(1000, actualizar_cronometro)
-        else:
+         
+        elif tiempo_restante != 0:
+         reiniciar_tiempo()
+            
+        else:   
           tiempo_terminado()
-     
-     #------------------------------------------------------
 
     ventana_juego = tk.Toplevel()
     ventana_juego.title(grado)
     ventana_juego.attributes('-fullscreen', True)
     
-    #------------------------------------------------------
-    
-    tiempo_inicial = 5
+    tiempo_inicial = 90
     tiempo_restante = tiempo_inicial
     
-    cronometro = tk.Label(ventana_juego, text="00:05", bg="gray85", fg="black", font=('arial', 25), width=14, height=2)
+    cronometro = tk.Label(ventana_juego, text="01:30", bg="gray85", fg="black", font=('arial', 25), width=14, height=2)
     cronometro.pack()
     cronometro.place(relx=0.92, rely=0.22, anchor=tk.SE)
-
-    actualizar_cronometro()
+    
+    empezar_tiempo = tk.Button(ventana_juego, text='>>>', font=('Arial', 20), bg="lawn green", command=iniciar_tiempo)
+    empezar_tiempo.pack(pady=2)
+    empezar_tiempo.place(relx=0.87, rely=0.28, anchor=tk.SE)
     
     def tiempo_terminado():
+     for boton in botones_opciones:
+        boton.config(state=tk.DISABLED)
      siguiente_boton.config(state=tk.NORMAL)
      cronometro.config(fg='red')
-    
-    #------------------------------------------------------
+     pregunta_texto.config(fg='red')
 
     imagen_fondo_juego = Image.open('PROYECTO-SECRETO/RECURSOS/fondo_juego.png')
     imagen_fondo_juego = ImageTk.PhotoImage(imagen_fondo_juego)
