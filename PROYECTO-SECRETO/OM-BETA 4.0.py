@@ -36,13 +36,7 @@ def reproducir_mal():
 def detener_audio_mal():
     pygame.mixer.music.stop()
     
-#------------------------------------------------------
-def tiempo_terminado():
-    print("¡Tiempo terminado!")
     
-#------------------------------------------------------
-
-
 preguntas = [
     {
         'grado': 9,
@@ -709,7 +703,7 @@ def abrir_ventana_juego(grado):
         ventana_juego.after(3000, ventana_juego.destroy)
 
     def avanzar_pregunta():
-     global puntaje_actual, imagen_respuesta_correcta, imagen_respuesta_incorrecta
+     global puntaje_actual, imagen_respuesta_correcta, imagen_respuesta_incorrecta, tiempo_restante
      if not preguntas_disponibles:
         for boton in botones_opciones:
                 boton.config(state=tk.DISABLED)
@@ -746,11 +740,17 @@ def abrir_ventana_juego(grado):
         resultado_texto.config(text='', fg='white')
         mostrar_pregunta()
         
+        
+        #----------
+     cronometro.config(fg="black")
+        #----------
+        
+        
     #------------------------------------------------------
     
     def actualizar_cronometro():
         nonlocal tiempo_restante
-    
+        
         minutos = tiempo_restante // 60
         segundos = tiempo_restante % 60
 
@@ -773,11 +773,15 @@ def abrir_ventana_juego(grado):
     tiempo_inicial = 5
     tiempo_restante = tiempo_inicial
     
-    cronometro = tk.Label(ventana_juego, text="00:05", bg="white", fg="black", font=('arial', 25), width=14, height=2)
+    cronometro = tk.Label(ventana_juego, text="00:05", bg="gray85", fg="black", font=('arial', 25), width=14, height=2)
     cronometro.pack()
     cronometro.place(relx=0.92, rely=0.22, anchor=tk.SE)
 
     actualizar_cronometro()
+    
+    def tiempo_terminado():
+     siguiente_boton.config(state=tk.NORMAL)
+     cronometro.config(fg='red')
     
     #------------------------------------------------------
 
