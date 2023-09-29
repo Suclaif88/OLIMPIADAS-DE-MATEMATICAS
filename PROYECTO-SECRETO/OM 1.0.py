@@ -662,7 +662,7 @@ def abrir_ventana_juego(grado):
                 boton = tk.Button(opciones_frame, text=opcion, font=('Arial', 12), width=30, height=2, command=lambda i=i: verificar_respuesta(pregunta_actual['opciones'][i]))
             boton.grid(row=i // 2, column=i % 2, pady=5, padx=10)
             botones_opciones.append(boton)
-            boton.config(bg='salmon', fg='black', highlightbackground='blue', borderwidth=7, font=('Arial', 12))
+            boton.config(bg='OliveDrab1', fg='black', highlightbackground='blue', borderwidth=7, font=('Berlin Sans FB', 15))
         siguiente_boton.config(state=tk.DISABLED)
         
     def verificar_respuesta(respuesta):
@@ -833,7 +833,7 @@ def abrir_ventana_juego(grado):
     fondo_label_juego.image = imagen_fondo_juego
     fondo_label_juego.lower()
 
-    pregunta_texto = tk.Label(ventana_juego, text='', font=('Arial', 20))
+    pregunta_texto = tk.Label(ventana_juego, text='', font=('Arial', 20), bg='misty rose')
     pregunta_texto.pack(pady=10)
 
     pregunta_imagen = tk.Label(ventana_juego)
@@ -863,7 +863,7 @@ def abrir_ventana_juego(grado):
     puntaje_label = tk.Label(ventana_juego, text=f"Puntaje actual: {puntaje_actual}", font=('Arial', 25))
     puntaje_label.pack(pady=10)
 
-    terminar_boton = tk.Button(ventana_juego, text='TERMINAR JUEGO', font=('Arial', 12),  bg='red', width=40, command=terminar_juego)
+    terminar_boton = tk.Button(ventana_juego, text='TERMINAR JUEGO', font=('Arial', 12), bg='Orchid1', width=40, command=terminar_juego)
     terminar_boton.pack(pady=10)
 
     imagen_respuesta_correcta = Image.open('PROYECTO-SECRETO/RECURSOS/bien.png')
@@ -890,28 +890,28 @@ imagen_fondo_inicio = ImageTk.PhotoImage(imagen_fondo_inicio)
 fondo_label_inicio = tk.Label(ventana_inicio, image=imagen_fondo_inicio)
 fondo_label_inicio.place(x=0, y=0, relwidth=1, relheight=1)
 
-oli_titulo = tk.Label(ventana_inicio, text='OLIMPIADAS DE MATEMATICAS', bg="white", fg="black", pady=20, font=('bold', 50))
+oli_titulo = tk.Label(ventana_inicio, text='OLIMPIADAS DE MATEMATICAS 2023', bg="white", fg="black", pady=20, font=('Broadway', 40))
 oli_titulo.pack(pady=10)
 
-etiqueta_grado = tk.Label(ventana_inicio, text='Selecciona el grado:', bg="white", fg="black", pady=20, font=('bold', 50))
+etiqueta_grado = tk.Label(ventana_inicio, text='Selecciona el grado:', bg="white", fg="black", pady=20, font=('Broadway', 40))
 etiqueta_grado.pack(pady=10)
 
-boton_grado_9 = tk.Button(ventana_inicio, text='Grado 9°', bg="lightgoldenrod1", fg="black", font=('arial', 25), width=18, height=2, pady=2, command=lambda: abrir_ventana_juego(9))
+boton_grado_9 = tk.Button(ventana_inicio, text='Grado 9°', bg="lightgoldenrod1", fg="black", font=('Broadway', 25), width=18, height=2, pady=2, command=lambda: abrir_ventana_juego(9))
 boton_grado_9.pack(pady=15)
 
-boton_grado_10 = tk.Button(ventana_inicio, text='Grado 10°', bg="lightgoldenrod1", fg="black", font=('arial', 25), width=18, height=2, command=lambda: abrir_ventana_juego(10))
+boton_grado_10 = tk.Button(ventana_inicio, text='Grado 10°', bg="lightgoldenrod1", fg="black", font=('Broadway', 25), width=18, height=2, command=lambda: abrir_ventana_juego(10))
 boton_grado_10.pack(pady=15)
 
-boton_grado_11 = tk.Button(ventana_inicio, text='Grado 11°', bg="lightgoldenrod1", fg="black", font=('arial', 25), width=18, height=2,  command=lambda: abrir_ventana_juego(11))
+boton_grado_11 = tk.Button(ventana_inicio, text='Grado 11°', bg="lightgoldenrod1", fg="black", font=('Broadway', 25), width=18, height=2,  command=lambda: abrir_ventana_juego(11))
 boton_grado_11.pack(pady=15)
 
-boton_final = tk.Button(ventana_inicio, text="FINAL", bg="lightgoldenrod1", fg="black", font=('arial', 25), width=18, height=2, command=lambda: abrir_ventana_juego(4))
+boton_final = tk.Button(ventana_inicio, text="FINAL", bg="lightgoldenrod1", fg="black", font=('Broadway', 20), width=18, height=2, command=lambda: abrir_ventana_juego(4))
 boton_final.place(relx=0.8, rely=0.6, anchor=tk.CENTER)
 
-boton_empate = tk.Button(ventana_inicio, text="EMPATE", bg="lightgoldenrod1", fg="black", font=('arial', 25), width=18, height=2, command=lambda: abrir_ventana_juego(2))
+boton_empate = tk.Button(ventana_inicio, text="EMPATE", bg="lightgoldenrod1", fg="black", font=('Broadway', 20), width=18, height=2, command=lambda: abrir_ventana_juego(2))
 boton_empate.place(relx=0.2, rely=0.6, anchor=tk.CENTER)
 
-terminar_boton = tk.Button(ventana_inicio, text='CERRAR JUEGO', font=('Arial', 12),  bg='red', width=40,  command=chao)
+terminar_boton = tk.Button(ventana_inicio, text='CERRAR JUEGO', font=('Broadway', 12),  bg='Orchid1', width=40,  command=chao)
 terminar_boton.pack(pady=10)
 
 ventana_inicio.mainloop()
