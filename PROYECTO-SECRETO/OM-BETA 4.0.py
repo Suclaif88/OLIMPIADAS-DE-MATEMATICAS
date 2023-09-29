@@ -589,6 +589,20 @@ preguntas = [
         'opciones': ['3', '1', '2', '4'],
         'respuesta_correcta': '2'
     },#--74--
+    {
+      'grado': 4,
+      'tipo': 'texto',
+      'pregunta': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      'opciones': ['1', '2', '3', '4'],
+      'respuesta_correcta': '2'
+    },
+    {
+      'grado': 2,
+      'tipo': 'texto',
+      'pregunta': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      'opciones': ['1', '2', '3', '4'],
+      'respuesta_correcta': '2'
+    },
 ]
 
 preguntas_disponibles = []
@@ -888,10 +902,10 @@ boton_grado_10.pack(pady=15)
 boton_grado_11 = tk.Button(ventana_inicio, text='Grado 11°', bg="white", fg="black", font=('arial', 25), width=18, height=2,  command=lambda: abrir_ventana_juego(11))
 boton_grado_11.pack(pady=15)
 
-boton_final = tk.Button(ventana_inicio, text="FINAL", bg="white", fg="black", font=('arial', 25), width=18, height=2, command=lambda: abrir_ventana_juego())
+boton_final = tk.Button(ventana_inicio, text="FINAL", bg="white", fg="black", font=('arial', 25), width=18, height=2, command=lambda: abrir_ventana_juego(4))
 boton_final.place(relx=0.8, rely=0.6, anchor=tk.CENTER)
 
-boton_empate = tk.Button(ventana_inicio, text="EMPATE", bg="white", fg="black", font=('arial', 25), width=18, height=2, command=lambda: abrir_ventana_juego())
+boton_empate = tk.Button(ventana_inicio, text="EMPATE", bg="white", fg="black", font=('arial', 25), width=18, height=2, command=lambda: abrir_ventana_juego(2))
 boton_empate.place(relx=0.2, rely=0.6, anchor=tk.CENTER)
 
 terminar_boton = tk.Button(ventana_inicio, text='CERRAR JUEGO', font=('Arial', 12),  bg='red', width=40,  command=chao)
