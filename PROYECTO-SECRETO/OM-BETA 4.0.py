@@ -37,7 +37,7 @@ def detener_audio_mal():
     pygame.mixer.music.stop()
     
 #------------------------------------------------------
-def accion_al_terminar_tiempo():
+def tiempo_terminado():
     print("¡Tiempo terminado!")
     
 #------------------------------------------------------
@@ -589,7 +589,7 @@ preguntas = [
     {
         'grado': 9,
         'tipo': 'imagen',
-        'pregunta': '¿Cuántos fichas como mínimo, deben ser cambiadas de posición para que el resultado sea 2?',
+        'pregunta': '¿Cuántas fichas como mínimo, deben ser cambiadas de posición para que el resultado sea 2?',
         'imagen': 'PROYECTO-SECRETO/RECURSOS/p15.png',
         'texto_debajo_imagen': '',
         'opciones': ['3', '1', '2', '4'],
@@ -749,11 +749,18 @@ def abrir_ventana_juego(grado):
     #------------------------------------------------------
     
     def actualizar_cronometro():
-     tiempo_actual = time.time() - tiempo_inicial
-     minutos = int(tiempo_actual / 60)
-     segundos = int(tiempo_actual % 60)
-     cronometro.config(text=f"{minutos:02}:{segundos:02}")
-     ventana_juego.after(1000, actualizar_cronometro)
+        nonlocal tiempo_restante
+    
+        minutos = tiempo_restante // 60
+        segundos = tiempo_restante % 60
+
+        cronometro.config(text=f"{minutos:02}:{segundos:02}")
+    
+        if tiempo_restante > 0:
+         tiempo_restante -= 1
+         ventana_juego.after(1000, actualizar_cronometro)
+        else:
+          tiempo_terminado()
      
      #------------------------------------------------------
 
@@ -763,15 +770,14 @@ def abrir_ventana_juego(grado):
     
     #------------------------------------------------------
     
-    tiempo_inicial = time.time()
+    tiempo_inicial = 5
+    tiempo_restante = tiempo_inicial
     
-    cronometro = tk.Label(ventana_juego, text="00:00", font=("Arial", 24))
+    cronometro = tk.Label(ventana_juego, text="00:05", bg="white", fg="black", font=('arial', 25), width=14, height=2)
     cronometro.pack()
-    cronometro.place(relx=0.9, rely=0.1, anchor=tk.SE)
+    cronometro.place(relx=0.92, rely=0.22, anchor=tk.SE)
 
     actualizar_cronometro()
-
-    ventana_juego.after(90000, accion_al_terminar_tiempo)
     
     #------------------------------------------------------
 
