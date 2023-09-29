@@ -665,7 +665,7 @@ def abrir_ventana_juego(grado):
             boton.config(bg='salmon', fg='black', highlightbackground='blue', borderwidth=7, font=('Arial', 12))
         siguiente_boton.config(state=tk.DISABLED)
         
-    def verificar_respuesta(respuesta): #SRD ❤ VOB
+    def verificar_respuesta(respuesta):
         global puntaje_actual, imagen_respuesta_correcta, imagen_respuesta_incorrecta
         if pregunta_actual['respuesta_correcta'] == respuesta:
             resultado_texto.config(text='¡Respuesta Correcta!', fg='green')
@@ -718,7 +718,7 @@ def abrir_ventana_juego(grado):
         cronometro.config(text="00:00")
         empezar_tiempo.config(bg="orange red")
         ventana_juego.after(3000, ventana_juego.destroy)
-
+ #SRD ❤ VOB
     def avanzar_pregunta():
      global puntaje_actual, imagen_respuesta_correcta, imagen_respuesta_incorrecta, tiempo_restante
      if not preguntas_disponibles:
