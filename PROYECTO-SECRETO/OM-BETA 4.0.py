@@ -795,11 +795,11 @@ def abrir_ventana_juego(grado):
     
     cronometro = tk.Label(ventana_juego, text="01:30", bg="gray85", fg="black", font=('arial', 25), width=14, height=2)
     cronometro.pack()
-    cronometro.place(relx=0.92, rely=0.22, anchor=tk.SE)
+    cronometro.place(relx=0.97, rely=0.32, anchor=tk.SE)
     
     empezar_tiempo = tk.Button(ventana_juego, text='>>>', font=('Arial', 20), bg="lawn green", command=iniciar_tiempo)
     empezar_tiempo.pack(pady=2)
-    empezar_tiempo.place(relx=0.87, rely=0.28, anchor=tk.SE)
+    empezar_tiempo.place(relx=0.90, rely=0.41, anchor=tk.SE)
     
     def tiempo_terminado():
      for boton in botones_opciones:
@@ -888,11 +888,11 @@ boton_grado_10.pack(pady=15)
 boton_grado_11 = tk.Button(ventana_inicio, text='Grado 11°', bg="white", fg="black", font=('arial', 25), width=18, height=2,  command=lambda: abrir_ventana_juego(11))
 boton_grado_11.pack(pady=15)
 
-boton_final = tk.Button(ventana_inicio, text="Botón Nuevo", bg="white", fg="black", font=('arial', 25), width=18, height=2, command=lambda: abrir_ventana_juego())
-boton_final.place(relx=0.7, rely=0.4, anchor=tk.CENTER)
+boton_final = tk.Button(ventana_inicio, text="FINAL", bg="white", fg="black", font=('arial', 25), width=18, height=2, command=lambda: abrir_ventana_juego())
+boton_final.place(relx=0.8, rely=0.6, anchor=tk.CENTER)
 
-boton_empate = tk.Button(ventana_inicio, text="Botón Nuevo", bg="white", fg="black", font=('arial', 25), width=18, height=2, command=lambda: abrir_ventana_juego())
-boton_empate.place(relx=0.3, rely=0.4, anchor=tk.CENTER)
+boton_empate = tk.Button(ventana_inicio, text="EMPATE", bg="white", fg="black", font=('arial', 25), width=18, height=2, command=lambda: abrir_ventana_juego())
+boton_empate.place(relx=0.2, rely=0.6, anchor=tk.CENTER)
 
 terminar_boton = tk.Button(ventana_inicio, text='CERRAR JUEGO', font=('Arial', 12),  bg='red', width=40,  command=chao)
 terminar_boton.pack(pady=10)
