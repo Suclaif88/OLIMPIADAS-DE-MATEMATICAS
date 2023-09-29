@@ -15,7 +15,7 @@ def sonido():
 
     canal_fondo.play(fondo_musical, loops=-1)
 
-#sonido()
+sonido()
 
 def detener_audio():
     pygame.mixer.music.stop()
