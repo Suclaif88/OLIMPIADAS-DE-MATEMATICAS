@@ -2,6 +2,7 @@ import tkinter as tk
 import random
 from PIL import Image, ImageTk
 import pygame
+import time
 
 def sonido():
     pygame.mixer.init()
@@ -14,7 +15,7 @@ def sonido():
 
     canal_fondo.play(fondo_musical, loops=-1)
 
-sonido()
+#sonido()
 
 def detener_audio():
     pygame.mixer.music.stop()
@@ -598,13 +599,9 @@ imagen_respuesta_incorrecta = None
 preguntas_respondidas = set()
 
 def abrir_ventana_juego(grado):
-    global preguntas_disponibles, pregunta_actual, imagen_pregunta_actual, imagen_respuesta_correcta, imagen_respuesta_incorrecta, puntaje_actual
+    global preguntas_disponibles, pregunta_actual, imagen_pregunta_actual, imagen_respuesta_correcta, imagen_respuesta_incorrecta, puntaje_actual, tiempo_inicial
+    
     preguntas_disponibles = [pregunta for pregunta in preguntas if pregunta['grado'] == grado]
-
-    if not preguntas_disponibles:
-        tk.messagebox.showinfo("Olimpiadas de Matemáticas", "No hay preguntas disponibles para este grado.")
-        terminar_juego()
-        return
 
     puntaje_actual = 0
     botones_opciones = []
@@ -791,7 +788,7 @@ def abrir_ventana_juego(grado):
     imagen_respuesta_correcta = ImageTk.PhotoImage(imagen_respuesta_correcta)
     imagen_respuesta_incorrecta = Image.open('PROYECTO-SECRETO/RECURSOS/mal.png')
     imagen_respuesta_incorrecta = ImageTk.PhotoImage(imagen_respuesta_incorrecta)
-
+    
     mostrar_pregunta()
 
 def chao():
@@ -825,6 +822,12 @@ boton_grado_10.pack(pady=15)
 
 boton_grado_11 = tk.Button(ventana_inicio, text='Grado 11°', bg="white", fg="black", font=('arial', 25), width=18, height=2,  command=lambda: abrir_ventana_juego(11))
 boton_grado_11.pack(pady=15)
+
+boton_final = tk.Button(ventana_inicio, text="Botón Nuevo", bg="white", fg="black", font=('arial', 25), width=18, height=2, command=lambda: abrir_ventana_juego())
+boton_final.place(relx=0.7, rely=0.4, anchor=tk.CENTER)
+
+boton_empate = tk.Button(ventana_inicio, text="Botón Nuevo", bg="white", fg="black", font=('arial', 25), width=18, height=2, command=lambda: abrir_ventana_juego())
+boton_empate.place(relx=0.3, rely=0.4, anchor=tk.CENTER)
 
 terminar_boton = tk.Button(ventana_inicio, text='CERRAR JUEGO', font=('Arial', 12),  bg='red', width=40,  command=chao)
 terminar_boton.pack(pady=10)
