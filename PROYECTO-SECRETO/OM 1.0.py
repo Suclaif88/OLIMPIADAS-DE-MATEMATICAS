@@ -691,9 +691,10 @@ def abrir_ventana_juego(grado):
         resultado_ventana.geometry('{}x{}+{}+{}'.format(width, height, x, y))
         if imagen_respuesta == imagen_respuesta_correcta:
             reproducir_bien()
+            resultado_ventana.after(2000, lambda: detener_audio_y_cerrar(resultado_ventana))
         elif imagen_respuesta == imagen_respuesta_incorrecta:
             reproducir_mal()
-        resultado_ventana.after(1500, lambda: detener_audio_y_cerrar(resultado_ventana))
+            resultado_ventana.after(3100, lambda: detener_audio_y_cerrar(resultado_ventana))   
 
     def detener_audio_y_cerrar(ventana_a_cerrar):
         detener_audio_bien()
@@ -820,6 +821,9 @@ def abrir_ventana_juego(grado):
      siguiente_boton.config(state=tk.NORMAL)
      cronometro.config(fg='red')
      pregunta_texto.config(fg='red')
+     pygame.mixer.init()
+     pygame.mixer.music.load("PROYECTO-SECRETO/RECURSOS/tiempo_acabado.mp3")
+     pygame.mixer.music.play(1)
 
     imagen_fondo_juego = Image.open('PROYECTO-SECRETO/RECURSOS/fondo_juego.png')
     imagen_fondo_juego = ImageTk.PhotoImage(imagen_fondo_juego)
