@@ -14,7 +14,7 @@ def sonido():
 
     canal_fondo.play(fondo_musical, loops=-1)
 
-sonido()
+#sonido()
 
 def detener_audio():
     pygame.mixer.music.stop()
@@ -896,19 +896,19 @@ oli_titulo.pack(pady=10)
 etiqueta_grado = tk.Label(ventana_inicio, text='Selecciona el grado:', bg="white", fg="black", pady=20, font=('bold', 50))
 etiqueta_grado.pack(pady=10)
 
-boton_grado_9 = tk.Button(ventana_inicio, text='Grado 9°', bg="white", fg="black", font=('arial', 25), width=18, height=2, pady=2, command=lambda: abrir_ventana_juego(9))
+boton_grado_9 = tk.Button(ventana_inicio, text='Grado 9°', bg="lightgoldenrod1", fg="black", font=('arial', 25), width=18, height=2, pady=2, command=lambda: abrir_ventana_juego(9))
 boton_grado_9.pack(pady=15)
 
-boton_grado_10 = tk.Button(ventana_inicio, text='Grado 10°', bg="white", fg="black", font=('arial', 25), width=18, height=2, command=lambda: abrir_ventana_juego(10))
+boton_grado_10 = tk.Button(ventana_inicio, text='Grado 10°', bg="lightgoldenrod1", fg="black", font=('arial', 25), width=18, height=2, command=lambda: abrir_ventana_juego(10))
 boton_grado_10.pack(pady=15)
 
-boton_grado_11 = tk.Button(ventana_inicio, text='Grado 11°', bg="white", fg="black", font=('arial', 25), width=18, height=2,  command=lambda: abrir_ventana_juego(11))
+boton_grado_11 = tk.Button(ventana_inicio, text='Grado 11°', bg="lightgoldenrod1", fg="black", font=('arial', 25), width=18, height=2,  command=lambda: abrir_ventana_juego(11))
 boton_grado_11.pack(pady=15)
 
-boton_final = tk.Button(ventana_inicio, text="FINAL", bg="white", fg="black", font=('arial', 25), width=18, height=2, command=lambda: abrir_ventana_juego(4))
+boton_final = tk.Button(ventana_inicio, text="FINAL", bg="lightgoldenrod1", fg="black", font=('arial', 25), width=18, height=2, command=lambda: abrir_ventana_juego(4))
 boton_final.place(relx=0.8, rely=0.6, anchor=tk.CENTER)
 
-boton_empate = tk.Button(ventana_inicio, text="EMPATE", bg="white", fg="black", font=('arial', 25), width=18, height=2, command=lambda: abrir_ventana_juego(2))
+boton_empate = tk.Button(ventana_inicio, text="EMPATE", bg="lightgoldenrod1", fg="black", font=('arial', 25), width=18, height=2, command=lambda: abrir_ventana_juego(2))
 boton_empate.place(relx=0.2, rely=0.6, anchor=tk.CENTER)
 
 terminar_boton = tk.Button(ventana_inicio, text='CERRAR JUEGO', font=('Arial', 12),  bg='red', width=40,  command=chao)
