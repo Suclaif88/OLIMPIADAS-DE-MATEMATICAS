@@ -915,3 +915,5 @@ terminar_boton = tk.Button(ventana_inicio, text='CERRAR JUEGO', font=('Broadway'
 terminar_boton.pack(pady=10)
 
 ventana_inicio.mainloop()
+
+#SRD
