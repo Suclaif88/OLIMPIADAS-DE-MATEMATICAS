@@ -853,22 +853,22 @@ def abrir_ventana_juego(grado):
     imagen_respuesta_incorrecta = Image.open('PROYECTO-SECRETO/RECURSOS/mal.png')
     imagen_respuesta_incorrecta = ImageTk.PhotoImage(imagen_respuesta_incorrecta)
     
-    pregunta_texto.pack(padx=10, pady=10)
+    pregunta_texto.pack(pady=10)
 
-    pregunta_imagen.pack(padx=10, pady=10)
+    pregunta_imagen.pack(pady=10)
     
-    texto_debajo_imagen.pack(padx=10, pady=10)
+    texto_debajo_imagen.pack(pady=10)
     
-    opciones_frame.pack(padx=10, pady=10)
+    opciones_frame.pack(pady=10)
     
-    resultado_texto.pack(padx=10, pady=10)
+    resultado_texto.pack(pady=10)
     
-    puntaje_label.pack(padx=10, pady=10)
+    puntaje_label.pack(pady=10)
     
-    siguiente_boton.pack(padx=10, pady=10)
+    siguiente_boton.pack(pady=10)
     siguiente_boton.config(state=tk.DISABLED)
     
-    terminar_boton.pack(padx=10, pady=10)
+    terminar_boton.pack(pady=10)
     
     if not preguntas_disponibles:
          for boton in botones_opciones:
