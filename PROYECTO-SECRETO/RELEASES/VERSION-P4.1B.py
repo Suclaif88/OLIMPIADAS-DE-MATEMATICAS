@@ -1,0 +1,117 @@
+import tkinter as tk
+import random
+from PIL import Image, ImageTk
+
+# Define una lista de preguntas y respuestas en el formato adecuado
+preguntas = [
+    {
+        'tipo': 'texto',
+        'pregunta': '¿Cuál es la capital de Francia?',
+        'opciones': ['Madrid', 'París', 'Berlín', 'Londres'],
+        'respuesta_correcta': 'París'
+    },
+    {
+        'tipo': 'imagen',
+        'pregunta': 'pregunta1.png',  # Asegúrate de que la imagen esté en la misma carpeta que este script
+        'opciones': ['1', '2', '3', '4'],
+        'respuesta_correcta': '1'
+    },
+    {
+        'tipo': 'texto',
+        'pregunta': '¿Cuál es el símbolo del hierro?',
+        'opciones': ['Fe', 'He', 'H', 'Ir'],
+        'respuesta_correcta': 'Fe'
+    },
+    # Agrega más preguntas aquí en el mismo formato
+]
+
+# Configura la ventana principal
+ventana = tk.Tk()
+ventana.title('Juego de Preguntas y Respuestas')
+
+# Variables globales
+preguntas_disponibles = preguntas.copy()
+puntaje_actual = 0
+pregunta_actual = None
+imagen_pregunta_actual = None  # Variable para mantener la imagen actual
+pregunta_tipo = None  # Variable para mantener el tipo de pregunta actual
+
+pregunta_texto = tk.StringVar()
+pregunta_label_texto = tk.Label(ventana, textvariable=pregunta_texto, font=('Arial', 14))
+pregunta_label_texto.pack(pady=10)
+
+pregunta_label_imagen = tk.Label(ventana)
+pregunta_label_imagen.pack(pady=10)
+
+def mostrar_pregunta():
+    global pregunta_actual, puntaje_actual, preguntas_disponibles, pregunta_tipo, imagen_pregunta_actual
+    resultado_texto.set('')
+
+    if not preguntas_disponibles:
+        pregunta_texto.set('No hay más preguntas disponibles.')
+        pregunta_label_texto.config(text='')
+        pregunta_label_imagen.config(image=None)  # Limpiar cualquier imagen previa
+        siguiente_boton.config(state=tk.DISABLED)
+        terminar_juego()
+        return
+
+    pregunta_actual = random.choice(preguntas_disponibles)
+    pregunta_tipo = pregunta_actual['tipo']
+    pregunta_texto.set(pregunta_actual['pregunta'])
+
+    if pregunta_tipo == 'imagen':
+        # Eliminar la imagen anterior si existe
+        if imagen_pregunta_actual:
+            imagen_pregunta_actual.close()
+
+        imagen_pregunta = Image.open(pregunta_actual['pregunta'])
+        imagen_pregunta = imagen_pregunta.resize((400, 300))
+        imagen_pregunta_actual = ImageTk.PhotoImage(imagen_pregunta)
+        pregunta_label_imagen.config(image=imagen_pregunta_actual)
+    else:
+        pregunta_label_imagen.config(image=None)  # Limpiar cualquier imagen previa
+
+    for i, opcion in enumerate(pregunta_actual['opciones']):
+        botones_opciones[i].config(text=opcion)
+
+    siguiente_boton.config(state=tk.DISABLED)
+    puntaje_label.config(text=f"Puntaje actual: {puntaje_actual}")
+
+def verificar_respuesta(respuesta):
+    global pregunta_actual, puntaje_actual, preguntas_disponibles
+    if pregunta_actual['respuesta_correcta'] == respuesta:
+        resultado_texto.set('¡Respuesta Correcta!')
+        puntaje_actual += 10
+    else:
+        resultado_texto.set('Respuesta Incorrecta')
+    siguiente_boton.config(state=tk.NORMAL)
+    preguntas_disponibles.remove(pregunta_actual)
+
+def terminar_juego():
+    pregunta_texto.set('Juego Terminado')
+    for boton in botones_opciones:
+        boton.config(state=tk.DISABLED)
+    resultado_texto.set(f'Puntaje final: {puntaje_actual}')
+
+botones_opciones = []
+for i in range(4):
+    boton = tk.Button(ventana, text='', font=('Arial', 12), command=lambda i=i: verificar_respuesta(pregunta_actual['opciones'][i]))
+    botones_opciones.append(boton)
+    boton.pack(pady=5)
+
+resultado_texto = tk.StringVar()
+resultado_label = tk.Label(ventana, textvariable=resultado_texto, font=('Arial', 12))
+resultado_label.pack(pady=10)
+
+siguiente_boton = tk.Button(ventana, text='Siguiente', font=('Arial', 12), command=mostrar_pregunta)
+siguiente_boton.pack(pady=10)
+siguiente_boton.config(state=tk.DISABLED)
+
+puntaje_actual = 0
+puntaje_label = tk.Label(ventana, text=f"Puntaje actual: {puntaje_actual}", font=('Arial', 12))
+puntaje_label.pack(pady=10)
+
+# Iniciar el juego
+mostrar_pregunta()
+
+ventana.mainloop()
