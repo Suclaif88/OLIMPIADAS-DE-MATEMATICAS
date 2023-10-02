@@ -811,11 +811,11 @@ def abrir_ventana_juego(grado):
     
     cronometro = tk.Label(ventana_juego, text="01:00", bg="gray85", fg="black", font=('arial', 25), width=14, height=2)
     cronometro.pack()
-    cronometro.place(relx=0.97, rely=0.32, anchor=tk.SE)
+    cronometro.place(relx=0.99, rely=0.32, anchor=tk.SE)
     
     empezar_tiempo = tk.Button(ventana_juego, text='>>>', font=('Arial', 20), bg="lawn green", command=iniciar_tiempo)
     empezar_tiempo.pack(pady=2)
-    empezar_tiempo.place(relx=0.90, rely=0.41, anchor=tk.SE)
+    empezar_tiempo.place(relx=0.92, rely=0.41, anchor=tk.SE)
     
     def tiempo_terminado():
      for boton in botones_opciones:
