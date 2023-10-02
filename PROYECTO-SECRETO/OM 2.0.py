@@ -629,6 +629,7 @@ def abrir_ventana_juego(grado):
         random.shuffle(opciones)
                 
         opciones_frame.pack()
+        opciones_frame.config(width=14, height=2, pady=5)
         opciones = pregunta_actual['opciones']
         num_opciones = len(opciones)
         for i in range(num_opciones):
@@ -649,11 +650,11 @@ def abrir_ventana_juego(grado):
         if pregunta_actual['tipo'] == 'imagen':
             pregunta_imagen.config(state=tk.NORMAL)
             imagen = Image.open(pregunta_actual['imagen'])
-            imagen = imagen.resize((400, 300))
+            imagen = imagen.resize((300, 200))
             imagen_pregunta_actual = ImageTk.PhotoImage(imagen)
             pregunta_imagen.config(image=imagen_pregunta_actual)
             texto_debajo_imagen.config(text=pregunta_actual.get('texto_debajo_imagen', ''), wraplength=1000)
-            pregunta_imagen.pack(pady=20)
+            pregunta_imagen.pack(pady=5)
             
         elif pregunta_actual['tipo'] == 'texto':
             pregunta_imagen.config(image='')
@@ -853,22 +854,22 @@ def abrir_ventana_juego(grado):
     imagen_respuesta_incorrecta = Image.open('PROYECTO-SECRETO/RECURSOS/mal.png')
     imagen_respuesta_incorrecta = ImageTk.PhotoImage(imagen_respuesta_incorrecta)
     
-    pregunta_texto.pack(pady=10)
+    pregunta_texto.pack(pady=5)
 
-    pregunta_imagen.pack(pady=10)
+    pregunta_imagen.pack(pady=5)
     
-    texto_debajo_imagen.pack(pady=10)
+    texto_debajo_imagen.pack(pady=5)
     
-    opciones_frame.pack(pady=10)
+    opciones_frame.pack(pady=5)
     
-    resultado_texto.pack(pady=10)
+    resultado_texto.pack(pady=5)
     
-    puntaje_label.pack(pady=10)
+    puntaje_label.pack(pady=5)
     
-    siguiente_boton.pack(pady=10)
+    siguiente_boton.pack(pady=5)
     siguiente_boton.config(state=tk.DISABLED)
     
-    terminar_boton.pack(pady=10)
+    terminar_boton.pack(pady=5)
     
     if not preguntas_disponibles:
          for boton in botones_opciones:
