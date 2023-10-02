@@ -710,7 +710,6 @@ def abrir_ventana_juego(grado):
         cronometro.config(text="00:00")
         empezar_tiempo.config(bg="orange red")
         ventana_juego.after(3000, ventana_juego.destroy)
- #SRD ❤ VOB
     def avanzar_pregunta():
      global puntaje_actual, imagen_respuesta_correcta, imagen_respuesta_incorrecta, tiempo_restante
      if not preguntas_disponibles:
@@ -775,7 +774,7 @@ def abrir_ventana_juego(grado):
         tiempo_iniciado = False
     
     def actualizar_cronometro():
-        global tiempo_restante, tiempo_iniciado
+        global tiempo_restante, tiempo_iniciado #SRD ❤ VOB
         
         minutos = tiempo_restante // 60
         segundos = tiempo_restante % 60
