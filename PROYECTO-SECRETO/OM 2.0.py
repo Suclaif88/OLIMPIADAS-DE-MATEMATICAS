@@ -564,8 +564,8 @@ preguntas = [
         'grado': 2,
         'tipo': 'texto',
         'pregunta': 'Un atleta sale a entrenar a las 9:00 a.m. a una velocidad de 10 km/h. Media hora después sale en su persecución otro atleta a una velocidad de 12 km/h. ¿La hora en la cual el segundo atleta alcanza al primero es? ',
-        'opciones': ['12:00 m', '11:30 a.m.', '11:00 a.m.', '10:30 a.m.'],
-        'respuesta_correcta': '12:00 m'
+        'opciones': ['12:00 a.m.', '11:30 a.m.', '11:00 a.m.', '10:30 a.m.'],
+        'respuesta_correcta': '12:00 a.m.'
     },
     {
         'grado': 2,
