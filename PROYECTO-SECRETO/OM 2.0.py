@@ -98,7 +98,7 @@ preguntas = [
         'tipo': 'texto',
         'pregunta': 'Una bici avanza 144 mts en un minuto, a velocidad constante. ¿Qué distancia recorrerá en 1/6 de hora?',
         'opciones': ['144 mts', '1440 mts', '148mts', '1480 mts'],
-        'respuesta_correcta': '1440'
+        'respuesta_correcta': '1440 mts'
     },  
     {
         'grado': 9,
@@ -355,8 +355,8 @@ preguntas = [
         'grado': 11,
         'tipo': 'mixta', 
         'pregunta': 'La negación del enunciado <<ningún A es B>>, representado en un diagrama es:',
-        'opciones': ['PROYECTO-SECRETO/RECURSOS/54a.jpg', 'PROYECTO-SECRETO/RECURSOS/54b.jpg', 'PROYECTO-SECRETO/RECURSOS/54c.jpg', 'PROYECTO-SECRETO/RECURSOS/55d.jpg'],
-        'respuesta_correcta': 'PROYECTO-SECRETO/RECURSOS/54b.jpg'
+        'opciones': ['PROYECTO-SECRETO/RECURSOS/54a.png', 'PROYECTO-SECRETO/RECURSOS/54b.png', 'PROYECTO-SECRETO/RECURSOS/54c.png', 'PROYECTO-SECRETO/RECURSOS/54d.png'],
+        'respuesta_correcta': 'PROYECTO-SECRETO/RECURSOS/54b.png'
     },
     {
         'grado': 11,
@@ -483,8 +483,8 @@ preguntas = [
         'pregunta': '',
         'imagen': 'PROYECTO-SECRETO/RECURSOS/p16.png',
         'texto_debajo_imagen': '',
-        'opciones': ['9 kg', '10kg', '11 kg', '12'],
-        'respuesta_correcta': '12'
+        'opciones': ['9 kg', '10kg', '11 kg', '12kg'],
+        'respuesta_correcta': '12kg'
     },   
     {
         'grado': 1,
@@ -590,7 +590,7 @@ preguntas = [
         'opciones': ['8', '7', '5', '4'],
         'respuesta_correcta': '5'
     }#11
-],#--73--
+]#--73--
 
 preguntas_disponibles = []
 puntaje_actual = 0
@@ -641,6 +641,8 @@ def abrir_ventana_juego(grado):
                 imagen_opcion = ImageTk.PhotoImage(imagen_opcion)
                 boton = tk.Button(opciones_frame, text="", image=imagen_opcion, compound="center", width=imagen_width, height=imagen_height, command=lambda i=i: verificar_respuesta(pregunta_actual['opciones'][i]))
                 boton.image = imagen_opcion
+                pregunta_imagen.config(image='')
+                texto_debajo_imagen.config(text='')
             else:
                 boton = tk.Button(opciones_frame, text=opcion, font=('Arial', 12), width=30, height=2, command=lambda i=i: verificar_respuesta(pregunta_actual['opciones'][i]))
             boton.grid(row=i // 2, column=i % 2, pady=5, padx=10)
