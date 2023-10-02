@@ -774,9 +774,9 @@ def abrir_ventana_juego(grado):
         empezar_tiempo.config(bg="orange red")
         actualizar_cronometro()
         
-    def detener_tiempo():
+    def detener_tiempo(): #SRD ❤ VOB
         global tiempo_restante, tiempo_iniciado
-        tiempo_iniciado = False #SRD ❤ VOB
+        tiempo_iniciado = False
         ventana_juego.after_cancel(actualizar_cronometro) 
         
     def reiniciar_tiempo():
