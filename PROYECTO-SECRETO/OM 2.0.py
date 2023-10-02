@@ -774,13 +774,13 @@ def abrir_ventana_juego(grado):
     def detener_tiempo():
         global tiempo_restante, tiempo_iniciado
         tiempo_iniciado = False
-        ventana_juego.after_cancel(actualizar_cronometro)
+        ventana_juego.after_cancel(actualizar_cronometro) #SRD ❤ VOB
         
     def reiniciar_tiempo():
         global tiempo_restante, tiempo_iniciado
         tiempo_restante = tiempo_inicial
         tiempo_iniciado = False
-#SRD ❤ VOB
+        
     def actualizar_cronometro():
         global tiempo_restante, tiempo_iniciado
         
