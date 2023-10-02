@@ -153,7 +153,7 @@ preguntas = [
         'texto_debajo_imagen': '',
         'opciones': ['2', '3', '4', '5'],
         'respuesta_correcta': '3'
-    },
+    },#16
     #GRADO 10°     
     {
         'grado': 10,
@@ -240,15 +240,6 @@ preguntas = [
         'respuesta_correcta': '2'
     }, 
     {
-        'grado':2,
-        'tipo': 'imagen',
-        'pregunta': 'La cantidad de triángulos de igual tamaño de la figura 1 que tendría la figura 12, siguiendo con el patrón dado es:',
-        'imagen': 'PROYECTO-SECRETO/RECURSOS/p7.png',
-        'texto_debajo_imagen': '',
-        'opciones': ['3', '1', '2', '4'],
-        'respuesta_correcta': '2'
-    },
-    {
         'grado': 10,
         'tipo': 'imagen',
         'pregunta': '¿Qué número falta?',
@@ -275,6 +266,13 @@ preguntas = [
         'opciones': ['20%', '30%', '40%', '35%'],
         'respuesta_correcta': '30%'
     },
+    {
+        'grado': 10,
+        'tipo': 'texto',
+        'pregunta': 'El número sigue en la sucesión es: 4, 4, 8, 24'
+        'opciones': ['96', '48', '32', '58'],
+        'respuesta_correcta': '96'
+    }
     #GRADO 11°
     {
         'grado': 11,
@@ -342,13 +340,6 @@ preguntas = [
     {
         'grado': 11,
         'tipo': 'texto',
-        'pregunta': 'Si 5 máquinas hacen 5 artículos en 5 minutos. ¿Cuánto tiempo necesitarán 100 máquinas para hacer 100 artículos?',
-        'opciones': ['5 minutos', '20 minutos', '30 minutos', '100 minutos'],
-        'respuesta_correcta': '5 minutos'
-    },
-    {
-        'grado': 11,
-        'tipo': 'texto',
         'pregunta': 'En una caja hay 5 bolas enumeradas del 1 al 5. Se extrae al azar una bola de la caja, se restituye y se repite la operación dos veces más. Se registra (de izquierda a derecha) los números de las bolas que van saliendo, según el orden de salida de modo que resulte un número de tres cifras. ¿Cuántos números diferentes de tres cifras pueden obtenerse de este modo?',
         'opciones': ['60', '125', '85', '100'],
         'respuesta_correcta': '125'
@@ -393,7 +384,7 @@ preguntas = [
         'texto_debajo_imagen': '',
         'opciones': ['3', '1', '2', '4'],
         'respuesta_correcta': '2'
-    },
+    },#15
     # RONDA FINAL
     {
         'grado': 1,
@@ -483,7 +474,7 @@ preguntas = [
         'grado': 1,
         'tipo': 'texto',
         'pregunta': 'Juan subió a un árbol que tenía naranjas y no bajó con naranjas. Si en el árbol no quedaron naranjas, ¿cuántas naranjas tenía inicialmente el árbol?',
-        'opciones': ['0', '1', '2', '3'],
+        'opciones': ['0', '1', '2', 'Absurdo'],
         'respuesta_correcta': '2'
     },
     {
@@ -512,7 +503,7 @@ preguntas = [
         'texto_debajo_imagen': '',
         'opciones': ['3', '1', '2', '4'],
         'respuesta_correcta': '2'
-    },
+    },#16
     #RONDA DESEMPATE
     {
         'grado': 2,
@@ -582,15 +573,24 @@ preguntas = [
         'pregunta': 'Un estudiante recibe su primer título sólo si pasa todos sus exámenes y presenta todos sus trabajos. De 300 estudiantes, 250 pasaron todos los exámenes y 215 presentaron todos los trabajos. ¿Cuántos estudiantes recibieron su primer título?',
         'opciones': ['Por lo menos 215', 'A lo sumo 185', 'Exactamente 215', 'Por lo menos 165'],
         'respuesta_correcta': 'Por lo menos 165'
-    },  
+    },   
+    {
+        'grado':2,
+        'tipo': 'imagen',
+        'pregunta': 'La cantidad de triángulos de igual tamaño de la figura 1 que tendría la figura 12, siguiendo con el patrón dado es:',
+        'imagen': 'PROYECTO-SECRETO/RECURSOS/p7.png',
+        'texto_debajo_imagen': '',
+        'opciones': ['3', '1', '2', '4'],
+        'respuesta_correcta': '2'
+    },
     {
         'grado': 2,
         'tipo': 'texto',
         'pregunta': 'Si se tiene que: 2^X * 2^Y = 32. ¿Cuánto es X+Y=?',
         'opciones': ['8', '7', '5', '4'],
         'respuesta_correcta': '5'
-    },#--74--
-]
+    }#11
+],#--73--
 
 preguntas_disponibles = []
 puntaje_actual = 0
