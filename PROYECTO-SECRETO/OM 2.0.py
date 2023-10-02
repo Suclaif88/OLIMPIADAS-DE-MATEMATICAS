@@ -69,7 +69,7 @@ preguntas = [
         'grado': 9,
         'tipo': 'texto',
         'pregunta': 'Se sabe que un remedio casero funciona en 25 de cada 60 personas. ¿Qué probabilidad hay de que funcione si me aplico el remedio?',
-        'opciones': ['15%', '45%', '35%', '60%'],
+        'opciones': ['15%', '45%', '35%', '25%'],
         'respuesta_correcta': '25%'
     },
     {
@@ -269,10 +269,10 @@ preguntas = [
     {
         'grado': 10,
         'tipo': 'texto',
-        'pregunta': 'El número sigue en la sucesión es: 4, 4, 8, 24'
+        'pregunta': 'El número sigue en la sucesión es: 4, 4, 8, 24',
         'opciones': ['96', '48', '32', '58'],
         'respuesta_correcta': '96'
-    }
+    },
     #GRADO 11°
     {
         'grado': 11,
