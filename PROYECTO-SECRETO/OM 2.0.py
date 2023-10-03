@@ -33,7 +33,7 @@ def reproducir_mal():
     pygame.mixer.music.play(-1)
 
 def detener_audio_mal():
-    pygame.mixer.music.stop()
+   pygame.mixer.music.stop()
     
 preguntas = [
     #GRADO 9°
@@ -69,7 +69,7 @@ preguntas = [
         'grado': 9,
         'tipo': 'texto',
         'pregunta': 'Se sabe que un remedio casero funciona en 25 de cada 60 personas. ¿Qué probabilidad hay de que funcione si me aplico el remedio?',
-        'opciones': ['15%', '45%', '35%', '25%'],
+        'opciones': ['15%', '25%', '35%', '60%'],
         'respuesta_correcta': '25%'
     },
     {
@@ -89,10 +89,10 @@ preguntas = [
     {
         'grado': 9,
         'tipo': 'texto',
-        'pregunta': 'En un estanque hay 100 pares de peces, nacen dos pares de peces por cada pez en el estanque, 350 de los peces que nacen se llevan a un río. ¿Cuántos peces quedarían en el estanque?',
-        'opciones': ['550', '450', '650', '250'],
-        'respuesta_correcta': '650'
-    },  
+        'pregunta': 'Hallar el número que sigue en la secuencia: 2, 4, 12, 48, 240, ...',
+        'opciones': ['1200', '1440', '720', '980'],
+        'respuesta_correcta': '1440'
+    },
     {
         'grado': 9,
         'tipo': 'texto',
@@ -153,12 +153,12 @@ preguntas = [
         'texto_debajo_imagen': '',
         'opciones': ['2', '3', '4', '5'],
         'respuesta_correcta': '3'
-    },#16
+    },#---16
     #GRADO 10°     
     {
         'grado': 10,
         'tipo': 'texto',
-        'pregunta': 'Un ladrillo más medio ladrillo vale 90 pesos. ¿Cuánto costarán 10 ladrillos',
+        'pregunta': 'Un ladrillo más medio ladrillo vale 90 pesos. ¿Cuánto costarán 10 ladrillos?',
         'opciones': ['900 pesos', '300 pesos', '600 pesos', '450 pesos'],
         'respuesta_correcta': '600 pesos'
     },  
@@ -269,10 +269,10 @@ preguntas = [
     {
         'grado': 10,
         'tipo': 'texto',
-        'pregunta': 'El número sigue en la sucesión es: 4, 4, 8, 24',
+        'pregunta': 'El número sigue en la sucesión es: 4, 4, 8, 24, ...',
         'opciones': ['96', '48', '32', '58'],
         'respuesta_correcta': '96'
-    },
+    },#---16
     #GRADO 11°
     {
         'grado': 11,
@@ -370,6 +370,15 @@ preguntas = [
     {
         'grado': 11,
         'tipo': 'imagen',
+        'pregunta': 'Halla <<X>> en la secuencia:',
+        'imagen': 'PROYECTO-SECRETO/RECURSOS/p17.png',
+        'texto_debajo_imagen': '',
+        'opciones': ['8', '36', '9', '18'],
+        'respuesta_correcta': '9'
+    },
+    {
+        'grado': 11,
+        'tipo': 'imagen',
         'pregunta': 'Se tiene que:',
         'imagen': 'PROYECTO-SECRETO/RECURSOS/p3.png',
         'texto_debajo_imagen': '',
@@ -384,7 +393,7 @@ preguntas = [
         'texto_debajo_imagen': '',
         'opciones': ['3', '1', '2', '4'],
         'respuesta_correcta': '2'
-    },#15
+    },#---16
     # RONDA FINAL
     {
         'grado': 1,
@@ -441,7 +450,14 @@ preguntas = [
         'pregunta': 'Héctor ha gastado el 40% de sus ahorros y le han dado a su hermana el 30% de lo que él aún tenía. ¿El porcentaje que conserva Héctor de sus ahorros es?',
         'opciones': ['25%', '30%', '42%', '38%'],
         'respuesta_correcta': '42%'
-    }, 
+    },  
+    {
+        'grado': 1,
+        'tipo': 'texto',
+        'pregunta': 'En un estanque hay 100 pares de peces, nacen dos pares de peces por cada pez en el estanque, 350 de los peces que nacen se llevan a un río. ¿Cuántos peces quedarían en el estanque?',
+        'opciones': ['550', '450', '650', '250'],
+        'respuesta_correcta': '650'
+    },
     {
         'grado': 1,
         'tipo': 'texto',
@@ -473,9 +489,24 @@ preguntas = [
     {
         'grado': 1,
         'tipo': 'texto',
+        'pregunta': 'Cierta clase de microbio tiene la propiedad de duplicarse en cada minuto. Si hay un recipiente y lo llena por la mitad a los 16 minutos, ¿en cuántos minutos se llenará el recipiente?',
+        'opciones': ['17', '32', '16', '18'],
+        'respuesta_correcta': '17'
+    }, 
+    {
+        'grado': 1,
+        'tipo': 'texto',
         'pregunta': 'Juan subió a un árbol que tenía naranjas y no bajó con naranjas. Si en el árbol no quedaron naranjas, ¿cuántas naranjas tenía inicialmente el árbol?',
         'opciones': ['0', '1', '2', 'Absurdo'],
         'respuesta_correcta': '2'
+    },
+
+    {
+        'grado': 1,
+        'tipo': 'texto',
+        'pregunta': 'Si sabemos que en una pulga en cada salto que da, alcanza 25cm de altura, ¿Qué altura alcanzará se da 5 saltos?',
+        'opciones': ['125 cm', '100 cm', '50 cm', '25 cm'],
+        'respuesta_correcta': '25 cm'
     },
     {
         'grado': 1,
@@ -483,8 +514,8 @@ preguntas = [
         'pregunta': '',
         'imagen': 'PROYECTO-SECRETO/RECURSOS/p16.png',
         'texto_debajo_imagen': '',
-        'opciones': ['9 kg', '10kg', '11 kg', '12kg'],
-        'respuesta_correcta': '12kg'
+        'opciones': ['9 kg', '10kg', '11 kg', '12 kg'],
+        'respuesta_correcta': '12 kg'
     },   
     {
         'grado': 1,
@@ -503,7 +534,17 @@ preguntas = [
         'texto_debajo_imagen': '',
         'opciones': ['3', '1', '2', '4'],
         'respuesta_correcta': '2'
-    },#16
+    },
+    {
+        'grado': 1,
+        'tipo': 'imagen',
+        'pregunta': 'Hallar «x» en  el siguiente ordenamiento:',
+        'imagen': 'PROYECTO-SECRETO/RECURSOS/p19.png',
+        'texto_debajo_imagen': '',
+        'opciones': ['3', '1', '2', '4'],
+        'respuesta_correcta': '3'
+    },
+    #----20
     #RONDA DESEMPATE
     {
         'grado': 2,
@@ -513,7 +554,16 @@ preguntas = [
         'texto_debajo_imagen': '',
         'opciones': ['1', '2', '3', '4'],
         'respuesta_correcta': '2'
-    },   
+    }, 
+    {
+        'grado': 2,
+        'tipo': 'imagen',
+        'pregunta': '¿Qué figura falta en el siguiente ordenamiento?',
+        'imagen': 'PROYECTO-SECRETO/RECURSOS/p18.png',
+        'texto_debajo_imagen': '',
+        'opciones': ['PROYECTO-SECRETO/RECURSOS/p18a.png', 'PROYECTO-SECRETO/RECURSOS/p18b.png', 'PROYECTO-SECRETO/RECURSOS/p18c.png', 'PROYECTO-SECRETO/RECURSOS/p18d.png'],
+        'respuesta_correcta': 'PROYECTO-SECRETO/RECURSOS/p18d.png'
+    },     
     {
         'grado': 2,
         'tipo': 'texto',
@@ -527,6 +577,13 @@ preguntas = [
         'pregunta': 'Un policía sabe que, de un grupo de 20 personas reunidas en una fiesta, hay 12 que son culpables de un robo, pero no sabe cuáles son. ¿Cuántas personas debe arrestar como mínimo, para tener la seguridad de llevar a un culpable?',
         'opciones': ['8', '9', '12', '7'],
         'respuesta_correcta': '9'
+    }, 
+    {
+        'grado': 2,
+        'tipo': 'texto',
+        'pregunta': 'Hallar <<X>> en la secuencia: 1, 1, 2, 3, 5, X, ... ',
+        'opciones': ['8', '7', '9', '10'],
+        'respuesta_correcta': '8'
     },
     {
         'grado': 2,
@@ -537,11 +594,18 @@ preguntas = [
     },
     {
         'grado': 2,
+        'tipo': 'texto',
+        'pregunta': 'Un hongo se duplica cada minuto. Si se coloca 1 hongo en un frasco, se llena en 40 mintos. ¿A los cuántos minutos el frasco estuvo lleno hasta su cuarta parte?',
+        'opciones': ['10', '20', '38', '28'],
+        'respuesta_correcta': '38'
+    },
+    {
+        'grado': 2,
         'tipo': 'imagen',
         'pregunta': 'William miro en el espejo para ver la hora que marcaba el reloj, y esto es lo que vio:',
         'imagen': 'PROYECTO-SECRETO/RECURSOS/p8.png',
         'texto_debajo_imagen': 'Pero el reloj había sido colgado al revés. ¿Qué hora es en realidad?',
-        'opciones': ['las 10:00', 'Las 8:00', 'Las 2:00', 'Las 4:00'],
+        'opciones': ['Las 10:00', 'Las 8:00', 'Las 2:00', 'Las 4:00'],
         'respuesta_correcta': 'Las 4:00'
     },   
     {
@@ -559,13 +623,20 @@ preguntas = [
         'pregunta': 'Cierto día, Mauricio afirma: la hermana de mi tío no es mi tía. Si lo que afirma Mauricio es cierto, ¿a quién se estaría refiriendo?',
         'opciones': ['A su hija', 'A su madre', 'A su esposa', 'A su hermana'],
         'respuesta_correcta': 'A su madre'
-    },   
+    }, 
+    {
+        'grado': 2,
+        'tipo': 'texto',
+        'pregunta': 'Un caracol asciende 16 metros durante el día y desciende en la noche 12 metros por acción de su peso. ¿Al cabo de cuántos días llegará a la parte superior de una pared de 40 metros de altura?',
+        'opciones': ['10', '9', '8', '7'],
+        'respuesta_correcta': '7'
+    },     
     {
         'grado': 2,
         'tipo': 'texto',
         'pregunta': 'Un atleta sale a entrenar a las 9:00 a.m. a una velocidad de 10 km/h. Media hora después sale en su persecución otro atleta a una velocidad de 12 km/h. ¿La hora en la cual el segundo atleta alcanza al primero es? ',
-        'opciones': ['12:00 a.m.', '11:30 a.m.', '11:00 a.m.', '10:30 a.m.'],
-        'respuesta_correcta': '12:00 a.m.'
+        'opciones': ['12:00 m', '11:30 a.m.', '11:00 a.m.', '10:30 a.m.'],
+        'respuesta_correcta': '12:00 m'
     },
     {
         'grado': 2,
@@ -573,15 +644,22 @@ preguntas = [
         'pregunta': 'Un estudiante recibe su primer título sólo si pasa todos sus exámenes y presenta todos sus trabajos. De 300 estudiantes, 250 pasaron todos los exámenes y 215 presentaron todos los trabajos. ¿Cuántos estudiantes recibieron su primer título?',
         'opciones': ['Por lo menos 215', 'A lo sumo 185', 'Exactamente 215', 'Por lo menos 165'],
         'respuesta_correcta': 'Por lo menos 165'
+    }, 
+    {
+        'grado': 2,
+        'tipo': 'texto',
+        'pregunta': 'Si de cada 50 mujeres 10 son casadas. De 10 solteras, ¿cuántas casadas habrían?',
+        'opciones': ['10', '20', 'Menos de 20', 'Ninguna'],
+        'respuesta_correcta': 'Ninguna'
     },   
     {
-        'grado':2,
+        'grado': 2,
         'tipo': 'imagen',
         'pregunta': 'La cantidad de triángulos de igual tamaño de la figura 1 que tendría la figura 12, siguiendo con el patrón dado es:',
         'imagen': 'PROYECTO-SECRETO/RECURSOS/p7.png',
         'texto_debajo_imagen': '',
-        'opciones': ['3', '1', '2', '4'],
-        'respuesta_correcta': '2'
+        'opciones': ['169', '124', '144', '146'],
+        'respuesta_correcta': '144'
     },
     {
         'grado': 2,
@@ -589,8 +667,8 @@ preguntas = [
         'pregunta': 'Si se tiene que: 2^X * 2^Y = 32. ¿Cuánto es X+Y=?',
         'opciones': ['8', '7', '5', '4'],
         'respuesta_correcta': '5'
-    }#11
-]#--73--
+    },#16
+]#--84--
 
 preguntas_disponibles = []
 puntaje_actual = 0
@@ -636,7 +714,7 @@ def abrir_ventana_juego(grado):
             opcion = opciones[i]
             if isinstance(opcion, str) and opcion.lower().endswith('.png'):
                 imagen_opcion = Image.open(opcion)
-                imagen_opcion = imagen_opcion.resize((250, 150))
+                imagen_opcion = imagen_opcion.resize((180, 80))
                 imagen_width, imagen_height = imagen_opcion.size
                 imagen_opcion = ImageTk.PhotoImage(imagen_opcion)
                 boton = tk.Button(opciones_frame, text="", image=imagen_opcion, compound="center", width=imagen_width, height=imagen_height, command=lambda i=i: verificar_respuesta(pregunta_actual['opciones'][i]))
