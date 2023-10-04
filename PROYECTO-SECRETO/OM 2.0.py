@@ -280,7 +280,7 @@ preguntas = [
         'pregunta': 'A un evento académico asisten 20 profesores de la I.E. "A"; 25 profesores de la I.E. "B"; y 30 de la I.E. "C". Se elige por sorteo a un delegado. ¿Cuál es la probabilidad de que el profesor elegido sea de la I.E. "A"?',
         'opciones': ['4/15', '4/5', '2/3', '1/5'],
         'respuesta_correcta': '4/15'
-    },
+    },#un comentario para no llorar
     {
         'grado': 11,
         'tipo': 'texto',
