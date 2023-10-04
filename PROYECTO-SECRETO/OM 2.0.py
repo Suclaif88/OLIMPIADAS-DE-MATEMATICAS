@@ -774,7 +774,7 @@ def abrir_ventana_juego(grado):
             resultado_ventana.after(3100, lambda: detener_audio_y_cerrar(resultado_ventana))   
 
     def detener_audio_y_cerrar(ventana_a_cerrar):
-        detener_audio_bien()
+        detener_audio_bien() #SRD ❤ VOB
         detener_audio_mal()
         ventana_a_cerrar.destroy()
 
@@ -852,7 +852,7 @@ def abrir_ventana_juego(grado):
         empezar_tiempo.config(bg="orange red")
         actualizar_cronometro()
         
-    def detener_tiempo(): #SRD ❤ VOB
+    def detener_tiempo():
         global tiempo_restante, tiempo_iniciado
         tiempo_iniciado = False
         ventana_juego.after_cancel(actualizar_cronometro) 
