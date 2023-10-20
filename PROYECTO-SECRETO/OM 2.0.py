@@ -504,7 +504,7 @@ preguntas = [
     {
         'grado': 1,
         'tipo': 'texto',
-        'pregunta': 'Si sabemos que en una pulga en cada salto que da, alcanza 25cm de altura, ¿Qué altura alcanzará se da 5 saltos?',
+        'pregunta': 'Si sabemos que una pulga en cada salto que da, alcanza 25cm de altura, ¿Qué altura alcanzará si da 5 saltos?',
         'opciones': ['125 cm', '100 cm', '50 cm', '25 cm'],
         'respuesta_correcta': '25 cm'
     },
@@ -542,7 +542,7 @@ preguntas = [
         'imagen': 'PROYECTO-SECRETO/RECURSOS/p19.png',
         'texto_debajo_imagen': '',
         'opciones': ['3', '1', '2', '4'],
-        'respuesta_correcta': '3'
+        'respuesta_correcta': '1'
     },
     #----20
     #RONDA DESEMPATE
