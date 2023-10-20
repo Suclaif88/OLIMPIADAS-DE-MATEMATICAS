@@ -383,7 +383,7 @@ preguntas = [
         'imagen': 'PROYECTO-SECRETO/RECURSOS/p3.png',
         'texto_debajo_imagen': '',
         'opciones': ['1000', '1210', '200', '4010'],
-        'respuesta_correcta': '200'
+        'respuesta_correcta': '1210'
     },   
     {
         'grado': 11,
